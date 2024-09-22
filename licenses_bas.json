@@ -2,21 +2,16 @@
     {
         "activated_device_uuid": "17F217A0-D760-53CC-A3DC-E64C3ACDC374",
         "status": "VALID",
-        "expiry_date": "2024-12-31 23:59:59"
+        "expiry_date": "2025-12-31 23:59:59"
     },
     {
-        "activated_device_uuid": "123e4567-e89b-12d3-a456-426614174000",
-        "status": "VALID",
-        "expiry_date": "2023-10-01 23:59:59"
-    },
-    {
-        "activated_device_uuid": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
-        "status": "EXPIRED",
-        "expiry_date": "2022-01-01 00:00:00"
-    },
-    {
-        "activated_device_uuid": "789e0123-e45b-67d8-9101-112345678900",
+        "activated_device_uuid": "yyyyyyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyy",
         "status": "INVALID",
-        "expiry_date": "2024-05-01 00:00:00"
+        "expiry_date": "2023-01-01 00:00:00"
+    },
+    {
+        "activated_device_uuid": "zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz",
+        "status": "VALID",
+        "expiry_date": "2024-06-30 12:00:00"
     }
 ]
