@@ -1,17 +1,20 @@
 [
     {
+        "Name": "My Laptop"
         "activated_device_uuid": "17F217A0-D760-53CC-A3DC-E64C3ACDC374",
         "status": "VALID",
         "expiry_date": "2090-12-31 23:59:59"
     },
     {
+        "Name": ""
         "activated_device_uuid": "yyyyyyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyy",
         "status": "INVALID",
         "expiry_date": "2023-01-01 00:00:00"
     },
     {
+        "Name": ""
         "activated_device_uuid": "zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz",
-        "status": "VALID",
+        "status": "INVALID",
         "expiry_date": "2024-06-30 12:00:00"
     }
 ]
