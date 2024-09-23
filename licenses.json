@@ -9,7 +9,7 @@
 
 
     {
-        "Name": "My Laptop",
+        "key": "1234-5678-ABCD-LAPT",
         "status": "VALID",
         "expiry_date": "2090-09-23 12:35:00",
         "activated_device_uuid": "17F217A0-D760-53CC-A3DC-E64C3ACDC374"
