@@ -1,7 +1,19 @@
 {
-    "LICENSE_URLS": [
-        "https://raw.githubusercontent.com/giveaway-free/Python-Bot-License/refs/heads/main/licenses.json",
-        "https://raw.githubusercontent.com/giveaway-free/Python-Bot-License/refs/heads/main/The_SELLER.json",
-        "https://example.com/license3.json"
+    "licenses": [
+        {
+            "license_url": "https://raw.githubusercontent.com/giveaway-free/Python-Bot-License/refs/heads/main/licenses.json",
+            "expiry_date": "2024-12-31 23:59:59",
+            "status": "VALID"
+        },
+        {
+            "license_url": "https://raw.githubusercontent.com/giveaway-free/Python-Bot-License/refs/heads/main/The_SELLER.json",
+            "expiry_date": "2023-09-30 23:59:59",
+            "status": "EXPIRED"
+        },
+        {
+            "license_url": "https://example.com/license3.json",
+            "expiry_date": "2023-01-01 00:00:00",
+            "status": "INVALID"
+        }
     ]
 }
