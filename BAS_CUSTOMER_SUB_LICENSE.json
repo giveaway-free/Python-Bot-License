@@ -1,0 +1,18 @@
+[
+    {
+        "sub_license_url": "https://raw.githubusercontent.com/giveaway-free/Python-Bot-License/main/2licenses_bas.json",
+        "status": "VALID",
+        "expiry_date": "2025-06-30 23:59:59"
+    },
+    {
+        "sub_license_url": "https://raw.githubusercontent.com/giveaway-free/Python-Bot-License/main/3licenses_bas.json",
+        "status": "INVALID",
+        "expiry_date": "2024-01-15 12:00:00"
+    },
+    {
+        "sub_license_url": "https://raw.githubusercontent.com/giveaway-free/Python-Bot-License/main/4licenses_bas.json",
+        "status": "VALID",
+        "expiry_date": "2024-10-01 23:59:59"
+    }
+]
+
