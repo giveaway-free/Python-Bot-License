@@ -10,13 +10,8 @@
         "expiry_date": "2029-01-01 00:00:00"
     },
     {
-        "activated_device_uuid": "9E448576-A2FC-891E-FEB7-7C10C9A04073",
-        "status": "VALID",
-        "expiry_date": "2029-06-30 12:00:00"
-    },
-    {        
         "activated_device_uuid": "BE090C4C-319B-11B2-A85C-CD74213381A8",
         "status": "VALID",
-        "expiry_date": "2029-12-31 12:59:59"
+        "expiry_date": "2029-06-30 12:00:00"
     }
 ]
