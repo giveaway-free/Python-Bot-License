@@ -39,6 +39,13 @@
         "status": "VALID",
         "expiry_date": "2060-08-23 04:35:00",
         "activated_device_uuid": "03000200-0400-0500-0006-000700080009"
+    },
+    
+    {
+        "key": "1205-5678-ABCD-EFGH",
+        "status": "VALID",
+        "expiry_date": "2060-08-23 04:35:00",
+        "activated_device_uuid": "03560274-043C-05C4-7006-110700080009"
     }
     
 
