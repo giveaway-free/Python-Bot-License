@@ -8,16 +8,16 @@
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            margin-top: 0px;
+            margin-top: 50px;
         }
         #datetime {
-            font-size: 14px;
+            font-size: 24px;
             margin: 20px;
         }
     </style>
 </head>
 <body>
- 
+    <h1>Live Date and Time</h1>
     <div id="datetime"></div>
 
     <script>
@@ -37,11 +37,8 @@
             document.getElementById('datetime').innerText = formatDateTime(now);
         }
 
-        // Update time immediately on load and every second thereafter
-        window.onload = function() {
-            updateDateTime(); // Initial call to display date and time immediately
-            setInterval(updateDateTime, 1000); // Update every second
-        };
+        // Update time immediately on load
+        window.onload = updateDateTime;
     </script>
 </body>
 </html>
