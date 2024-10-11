@@ -1,0 +1,17 @@
+{
+    "utc_offset": "+06:00",
+    "timezone": "Asia/Dhaka",
+    "day_of_week": 5,
+    "day_of_year": 285,
+    "datetime": "2024-10-11T19:21:59.705300+06:00",
+    "utc_datetime": "2024-10-11T13:21:59.705300+00:00",
+    "unixtime": 1728652919,
+    "raw_offset": 21600,
+    "week_number": 41,
+    "dst": false,
+    "abbreviation": "+06",
+    "dst_offset": 0,
+    "dst_from": null,
+    "dst_until": null,
+    "client_ip": "114.130.67.207"
+}
