@@ -3,47 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Live Date and Time from API</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 50px;
-        }
-        #datetime {
-            font-size: 24px;
-            margin: 20px;
-        }
-    </style>
+    <title>Current Time Based on Public IP</title>
 </head>
 <body>
-    <h1>Live Date and Time from API</h1>
-    <div id="datetime"></div>
+    <h1>Current Time</h1>
+    <button id="getTimeButton">Get Current Time</button>
+    <p id="timeDisplay"></p>
 
     <script>
-        async function fetchDateTime() {
+        document.getElementById('getTimeButton').addEventListener('click', async () => {
             try {
-                const response = await fetch('http://worldtimeapi.org/api/timezone/Etc/UTC.json');
+                const response = await fetch('https://worldtimeapi.org/api/ip');
                 const data = await response.json();
-                const dateTime = new Date(data.utc_datetime);
-                const options = { 
-                    year: 'numeric', 
-                    month: 'long', 
-                    day: 'numeric', 
-                    hour: '2-digit', 
-                    minute: '2-digit', 
-                    second: '2-digit', 
-                    hour12: true 
-                };
-                document.getElementById('datetime').innerText = dateTime.toLocaleString('en-US', options);
+                const time = data.datetime;
+                document.getElementById('timeDisplay').innerText = `Current Time: ${time}`;
             } catch (error) {
-                console.error('Error fetching the date and time:', error);
-                document.getElementById('datetime').innerText = 'Failed to retrieve date and time.';
+                console.error('Error fetching time:', error);
+                document.getElementById('timeDisplay').innerText = 'Failed to fetch time.';
             }
-        }
-
-        fetchDateTime(); // Initial call to fetch date and time immediately
-        setInterval(fetchDateTime, 10000); // Update every 10 seconds
+        });
     </script>
 </body>
 </html>
