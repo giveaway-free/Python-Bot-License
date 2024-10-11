@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,13 +11,13 @@
             margin-top: 0px;
         }
         #datetime {
-            font-size: 15px;
-            margin: 20px;
+            font-size: 14px;
+            margin: 0px;
         }
     </style>
 </head>
 <body>
-    
+  
     <div id="datetime"></div>
 
     <script>
@@ -37,8 +37,9 @@
             document.getElementById('datetime').innerText = formatDateTime(now);
         }
 
-        setInterval(updateDateTime, 1000);
+        // Update time immediately on load and every second thereafter
         updateDateTime(); // Initial call to display date and time immediately
+        setInterval(updateDateTime, 1000);
     </script>
 </body>
 </html>
