@@ -17,7 +17,7 @@
     </style>
 </head>
 <body>
-
+  
     <div id="datetime"></div>
 
     <script>
@@ -28,12 +28,11 @@
             let hours = date.getHours();
             const minutes = String(date.getMinutes()).padStart(2, '0');
             const seconds = String(date.getSeconds()).padStart(2, '0');
-            const ampm = hours >= 12 ? 'PM' : 'AM';
 
             hours = hours % 12; // Convert to 12-hour format
             hours = hours ? String(hours).padStart(2, '0') : '12'; // Adjust '0' to '12'
 
-            return `${year}-${month}-${day} ${hours}:${minutes}:${seconds} ${ampm}`;
+            return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;
         }
 
         function updateDateTime() {
