@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Viewer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+            text-align: left;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ddd;
+            white-space: pre-wrap; /* Allows for formatting to show correctly */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>JSON Viewer</h1>
+    <pre id="jsonContent"></pre>
+
+    <script>
+        fetch('data.json')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                // Pretty print the JSON with 2 spaces for indentation
+                document.getElementById('jsonContent').textContent = JSON.stringify(data, null, 2);
+            })
+            .catch(error => {
+                console.error('There was a problem with the fetch operation:', error);
+                document.getElementById('jsonContent').textContent = 'Failed to load JSON data.';
+            });
+    </script>
+    
+</body>
+</html>
