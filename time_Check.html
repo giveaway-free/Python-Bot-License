@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Date and Time Display</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,7 +10,7 @@
             margin-top: 50px;
         }
         #datetime {
-            font-size: 24px;
+            font-size: 18px;
             margin: 20px;
         }
     </style>
@@ -22,8 +21,39 @@
     <script>
         function updateDateTime() {
             const now = new Date();
+            const utcOffset = '+06:00'; // Adjust as needed
+            const timezone = 'Asia/Dhaka';
+            const dayOfWeek = now.getUTCDay();
+            const dayOfYear = Math.floor((now - new Date(now.getFullYear(), 0, 0)) / 1000 / 60 / 60 / 24);
             const formattedDate = now.toISOString();
-            document.getElementById('datetime').textContent = JSON.stringify({ datetime: formattedDate });
+            const utcDateTime = now.toUTCString();
+            const unixTime = Math.floor(now.getTime() / 1000);
+            const rawOffset = 21600; // Offset in seconds (6 hours)
+            const weekNumber = Math.ceil((dayOfYear + new Date(now.getFullYear(), 0, 1).getDay()) / 7);
+            const dst = false; // Adjust as needed
+            const abbreviation = '+06'; // Adjust as needed
+            const dstOffset = 0; // Adjust as needed
+            const clientIp = '114.130.67.207'; // Placeholder for client IP
+
+            const data = {
+                utc_offset: utcOffset,
+                timezone: timezone,
+                day_of_week: dayOfWeek,
+                day_of_year: dayOfYear,
+                datetime: formattedDate,
+                utc_datetime: utcDateTime,
+                unixtime: unixTime,
+                raw_offset: rawOffset,
+                week_number: weekNumber,
+                dst: dst,
+                abbreviation: abbreviation,
+                dst_offset: dstOffset,
+                dst_from: null,
+                dst_until: null,
+                client_ip: clientIp
+            };
+
+            document.getElementById('datetime').textContent = JSON.stringify(data);
         }
 
         // Update the date and time immediately
