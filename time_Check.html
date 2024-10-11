@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+   
     <style>
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 0px;
+            text-align: left; /* Aligns text to the left */
+            margin: 0px; /* Added margin for better spacing */
         }
         #datetime {
             font-size: 18px;
@@ -19,8 +19,11 @@
 </head>
 <body>
 
+    <button id="togglePrettyPrint">Toggle Pretty Print</button>
     <div id="datetime"></div>
     <script>
+        let prettyPrintEnabled = true; // Default to pretty print
+
         function getDateTimeInfo() {
             const now = new Date();
             const utcOffset = '+06:00'; // Adjust as needed
@@ -55,12 +58,22 @@
                 client_ip: clientIp
             };
 
-            // Pretty print the JSON with 2 spaces for indentation
-            document.getElementById('datetime').textContent = JSON.stringify(data, null, 2);
+            // Display JSON based on pretty print setting
+            document.getElementById('datetime').textContent = 
+                prettyPrintEnabled ? JSON.stringify(data, null, 2) : JSON.stringify(data);
+        }
+
+        // Function to toggle pretty print
+        function togglePrettyPrint() {
+            prettyPrintEnabled = !prettyPrintEnabled;
+            getDateTimeInfo(); // Refresh the displayed JSON
         }
 
         // Call the function to get date and time info on page load
         getDateTimeInfo();
+
+        // Add event listener to button
+        document.getElementById('togglePrettyPrint').addEventListener('click', togglePrettyPrint);
     </script>
     
 </body>
