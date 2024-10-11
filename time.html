@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+    <title>Live Date and Time</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -12,12 +12,12 @@
         }
         #datetime {
             font-size: 14px;
-            margin: 0px;
+            margin: 20px;
         }
     </style>
 </head>
 <body>
-  
+ 
     <div id="datetime"></div>
 
     <script>
@@ -38,8 +38,10 @@
         }
 
         // Update time immediately on load and every second thereafter
-        updateDateTime(); // Initial call to display date and time immediately
-        setInterval(updateDateTime, 1000);
+        window.onload = function() {
+            updateDateTime(); // Initial call to display date and time immediately
+            setInterval(updateDateTime, 1000); // Update every second
+        };
     </script>
 </body>
 </html>
