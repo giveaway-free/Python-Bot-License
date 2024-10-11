@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            margin-top: 50px;
+            margin-top: 0px;
         }
         #datetime {
             font-size: 18px;
@@ -19,14 +20,14 @@
 
     <div id="datetime"></div>
     <script>
-        function updateDateTime() {
+        function getDateTimeInfo() {
             const now = new Date();
             const utcOffset = '+06:00'; // Adjust as needed
             const timezone = 'Asia/Dhaka';
             const dayOfWeek = now.getUTCDay();
             const dayOfYear = Math.floor((now - new Date(now.getFullYear(), 0, 0)) / 1000 / 60 / 60 / 24);
             const formattedDate = now.toISOString();
-            const utcDateTime = now.toUTCString();
+            const utcDateTime = now.toISOString(); // Use the same date for UTC
             const unixTime = Math.floor(now.getTime() / 1000);
             const rawOffset = 21600; // Offset in seconds (6 hours)
             const weekNumber = Math.ceil((dayOfYear + new Date(now.getFullYear(), 0, 1).getDay()) / 7);
@@ -56,11 +57,8 @@
             document.getElementById('datetime').textContent = JSON.stringify(data);
         }
 
-        // Update the date and time immediately
-        updateDateTime();
-
-        // Update every second
-        setInterval(updateDateTime, 1000);
+        // Call the function to get date and time info on page load
+        getDateTimeInfo();
     </script>
     
 </body>
