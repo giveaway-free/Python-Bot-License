@@ -13,6 +13,7 @@
         #datetime {
             font-size: 18px;
             margin: 20px;
+            white-space: pre-wrap; /* Allows for formatting to show correctly */
         }
     </style>
 </head>
@@ -54,7 +55,8 @@
                 client_ip: clientIp
             };
 
-            document.getElementById('datetime').textContent = JSON.stringify(data);
+            // Pretty print the JSON with 2 spaces for indentation
+            document.getElementById('datetime').textContent = JSON.stringify(data, null, 2);
         }
 
         // Call the function to get date and time info on page load
