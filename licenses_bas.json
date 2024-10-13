@@ -18,5 +18,10 @@
         "activated_device_uuid": "9E448576-A2FC-891E-FEB7-7C10C9A04073",
         "status": "VALID",
         "expiry_date": "2025-12-31 12:59:59"
+        },
+        {
+        "activated_device_uuid": "4C4C4544-0050-3310-8053-87C04F565731",
+        "status": "VALID",
+        "expiry_date": "2025-12-31 12:59:59"
         }
 ]
