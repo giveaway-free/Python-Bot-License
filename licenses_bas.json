@@ -33,5 +33,35 @@
         "activated_device_uuid": "03000200-0400-0500-0006-000700080009",
         "status": "VALID",
         "expiry_date": "2025-12-31 08:59:59"
+        },
+        {
+        "activated_device_uuid": "03000200-0400-0500-0006-000700080009",
+        "status": "VALID",
+        "expiry_date": "2025-12-31 08:59:59"
+        },
+        {
+        "activated_device_uuid": "916F4600-7465-11E4-B2A0-F0761C5124C8",
+        "status": "VALID",
+        "expiry_date": "2025-12-31 08:59:59"
+        },
+        {
+        "activated_device_uuid": "",
+        "status": "VALID",
+        "expiry_date": "2025-12-31 08:59:59"
+        },
+        {
+        "activated_device_uuid": "",
+        "status": "VALID",
+        "expiry_date": "2025-12-31 08:59:59"
+        },
+        {
+        "activated_device_uuid": "",
+        "status": "VALID",
+        "expiry_date": "2025-12-31 08:59:59"
+        },
+        {
+        "activated_device_uuid": "",
+        "status": "VALID",
+        "expiry_date": "2025-12-31 08:59:59"
         }
 ]
