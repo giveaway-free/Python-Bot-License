@@ -3,24 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
- 
+    <title>Generate JSON</title>
     <script>
-        function fetchCurrentTime() {
-            // Get current time in ISO format
+        function generateJSON() {
+            // Get the current time in ISO format
             const now = new Date().toISOString();
             const jsonResponse = {
                 current_time: now
             };
-            // Display the JSON output
-            document.getElementById('json-output').textContent = JSON.stringify(jsonResponse, null, 2);
-        }
 
-        // Fetch the time when the page loads
-        window.onload = fetchCurrentTime;
+            // Create a JSON string
+            const jsonString = JSON.stringify(jsonResponse, null, 2);
+
+            // Create a blob from the JSON string
+            const blob = new Blob([jsonString], { type: 'application/json' });
+
+            // Create a link to download the JSON file
+            const link = document.createElement('a');
+            link.href = URL.createObjectURL(blob);
+            link.download = 'current_time.json'; // Filename for download
+
+            // Append to the body and click to download
+            document.body.appendChild(link);
+            link.click();
+
+            // Clean up
+            document.body.removeChild(link);
+        }
     </script>
 </head>
 <body>
-   
-    <pre id="json-output">Loading...</pre>
+    <h1>Generate JSON File</h1>
+    <button onclick="generateJSON()">Download Current Time as JSON</button>
 </body>
 </html>
