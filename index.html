@@ -3,45 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Live Date and Time</title>
+   
     <style>
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 0px;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
         }
-        #datetime {
-            font-size: 24px;
-            margin: 20px;
+
+        .container {
+            text-align: center;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.5em;
+            margin: 0;
         }
     </style>
 </head>
 <body>
-  
-    <div id="datetime"></div>
+    <div class="container">
+        <h1>Current Date and Time</h1>
+        <p id="datetime"></p>
+    </div>
 
     <script>
-        function formatDateTime(date) {
-            const year = date.getFullYear();
-            const month = String(date.getMonth() + 1).padStart(2, '0'); // Months are zero-based
-            const day = String(date.getDate()).padStart(2, '0');
-            let hours = date.getHours();
-            const minutes = String(date.getMinutes()).padStart(2, '0');
-            const seconds = String(date.getSeconds()).padStart(2, '0');
-
-            hours = hours % 12; // Convert to 12-hour format
-            hours = hours ? String(hours).padStart(2, '0') : '12'; // Adjust '0' to '12'
-
-            return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;
-        }
-
         function updateDateTime() {
             const now = new Date();
-            document.getElementById('datetime').innerText = formatDateTime(now);
+            const isoString = now.toISOString(); // Converts to ISO format
+            document.getElementById('datetime').textContent = isoString;
         }
 
-        // Update time immediately on load
-        window.onload = updateDateTime;
+        updateDateTime(); // Call the function to update the date and time
     </script>
 </body>
 </html>
