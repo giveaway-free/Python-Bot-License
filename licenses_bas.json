@@ -1,7 +1,7 @@
 [
     {        
         "activated_device_uuid": "17F217A0-D760-53CC-A3DC-E64C3ACDC374",
-        "status": "INVALID",
+        "status": "My Laptop",
         "expiry_date": "2025-12-31 12:59:59"
     },
     {
@@ -66,7 +66,7 @@
         },
         {
         "activated_device_uuid": "03560274-043C-0586-3206-B80700080009",
-        "status": "VALID",
+        "status": "Digital IT Institute",
         "expiry_date": "2025-12-31 08:59:59"
         },
         {
