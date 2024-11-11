@@ -15,8 +15,8 @@
         "expiry_date": "2025-12-31 12:59:59"
     },
         {
-        "activated_device_uuid": "",
-        "status": "VALID",
+        "activated_device_uuid": "CEA7EF37-DE34-42D5-A812-9CCB41DE9654",
+        "status": "RDP",
         "expiry_date": "2025-12-31 12:59:59"
         },
         {
