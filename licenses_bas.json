@@ -330,7 +330,7 @@
         "expiry_date": "2025-12-31 08:59:59"
         },
         {
-        "activated_device_uuid": "",
+        "activated_device_uuid": "00000000-0000-0000-0000-3CECEF91E5A0",
         "status": "VALID",
         "expiry_date": "2025-12-31 08:59:59"
         }
