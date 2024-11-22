@@ -2,10 +2,10 @@
     "LICENSE_URLS": [
         {
             "url": "https://raw.githubusercontent.com/giveaway-free/Python-Bot-License/refs/heads/main/licenses_bas.json",
-            "expiry_date": "2025-09-30 23:59:59"
+            "expiry_date": "2029-09-30 23:59:59"
         },
         {
-            "url": "https://raw.githubusercontent.com/aplo01/ebaslic/refs/heads/main/basbotlic.json",
+            "url": "https://raw.githubusercontent.com/giveaway-free/Python-Bot-License/refs/heads/main/RDP%20License.json",
             "expiry_date": "2029-12-31 23:59:59"
         }
     ]
