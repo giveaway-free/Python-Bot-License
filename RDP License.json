@@ -1,1 +1,192 @@
-
+[
+  {
+        "activated_device_uuid": "E4CE3794-2F1F-46E4-ACB9-EDB14889401E",
+        "status": "VALID",
+        "expiry_date": "2025-12-31 08:59:59"
+        },
+        {
+        "activated_device_uuid": "16CDD6C9-5F20-4619-9972-CB2A59E8D5B3",
+        "status": "VALID",
+        "expiry_date": "2025-12-31 08:59:59"
+        },
+        {
+        "activated_device_uuid": "",
+        "status": "VALID",
+        "expiry_date": "2025-12-31 08:59:59"
+        },
+        {
+        "activated_device_uuid": "",
+        "status": "VALID",
+        "expiry_date": "2025-12-31 08:59:59"
+        },
+        {
+        "activated_device_uuid": "",
+        "status": "VALID",
+        "expiry_date": "2025-12-31 08:59:59"
+        },
+        {
+        "activated_device_uuid": "",
+        "status": "VALID",
+        "expiry_date": "2025-12-31 08:59:59"
+        },
+        {
+        "activated_device_uuid": "",
+        "status": "VALID",
+        "expiry_date": "2025-12-31 08:59:59"
+        },
+        {
+        "activated_device_uuid": "",
+        "status": "VALID",
+        "expiry_date": "2025-12-31 08:59:59"
+        },
+        {
+        "activated_device_uuid": "",
+        "status": "VALID",
+        "expiry_date": "2025-12-31 08:59:59"
+        },
+        {
+        "activated_device_uuid": "",
+        "status": "VALID",
+        "expiry_date": "2025-12-31 08:59:59"
+        },
+        {
+        "activated_device_uuid": "",
+        "status": "VALID",
+        "expiry_date": "2025-12-31 08:59:59"
+        },
+        {
+        "activated_device_uuid": "",
+        "status": "VALID",
+        "expiry_date": "2025-12-31 08:59:59"
+        },
+        {
+        "activated_device_uuid": "",
+        "status": "VALID",
+        "expiry_date": "2025-12-31 08:59:59"
+        },
+        {
+        "activated_device_uuid": "",
+        "status": "VALID",
+        "expiry_date": "2025-12-31 08:59:59"
+        },
+        {
+        "activated_device_uuid": "",
+        "status": "VALID",
+        "expiry_date": "2025-12-31 08:59:59"
+        },
+        {
+        "activated_device_uuid": "",
+        "status": "VALID",
+        "expiry_date": "2025-12-31 08:59:59"
+        },
+        {
+        "activated_device_uuid": "",
+        "status": "VALID",
+        "expiry_date": "2025-12-31 08:59:59"
+        },
+        {
+        "activated_device_uuid": "",
+        "status": "VALID",
+        "expiry_date": "2025-12-31 08:59:59"
+        },
+        {
+        "activated_device_uuid": "",
+        "status": "VALID",
+        "expiry_date": "2025-12-31 08:59:59"
+        },
+        {
+        "activated_device_uuid": "",
+        "status": "VALID",
+        "expiry_date": "2025-12-31 08:59:59"
+        },
+        {
+        "activated_device_uuid": "",
+        "status": "VALID",
+        "expiry_date": "2025-12-31 08:59:59"
+        },
+        {
+        "activated_device_uuid": "",
+        "status": "VALID",
+        "expiry_date": "2025-12-31 08:59:59"
+        },
+        {
+        "activated_device_uuid": "",
+        "status": "VALID",
+        "expiry_date": "2025-12-31 08:59:59"
+        },
+        {
+        "activated_device_uuid": "",
+        "status": "VALID",
+        "expiry_date": "2025-12-31 08:59:59"
+        },
+        {
+        "activated_device_uuid": "",
+        "status": "VALID",
+        "expiry_date": "2025-12-31 08:59:59"
+        },
+        {
+        "activated_device_uuid": "",
+        "status": "VALID",
+        "expiry_date": "2025-12-31 08:59:59"
+        },
+        {
+        "activated_device_uuid": "",
+        "status": "VALID",
+        "expiry_date": "2025-12-31 08:59:59"
+        },
+        {
+        "activated_device_uuid": "",
+        "status": "VALID",
+        "expiry_date": "2025-12-31 08:59:59"
+        },
+        {
+        "activated_device_uuid": "",
+        "status": "VALID",
+        "expiry_date": "2025-12-31 08:59:59"
+        },
+        {
+        "activated_device_uuid": "",
+        "status": "VALID",
+        "expiry_date": "2025-12-31 08:59:59"
+        },
+        {
+        "activated_device_uuid": "",
+        "status": "VALID",
+        "expiry_date": "2025-12-31 08:59:59"
+        },
+        {
+        "activated_device_uuid": "",
+        "status": "VALID",
+        "expiry_date": "2025-12-31 08:59:59"
+        },
+        {
+        "activated_device_uuid": "",
+        "status": "VALID",
+        "expiry_date": "2025-12-31 08:59:59"
+        },
+        {
+        "activated_device_uuid": "",
+        "status": "VALID",
+        "expiry_date": "2025-12-31 08:59:59"
+        },
+        {
+        "activated_device_uuid": "",
+        "status": "VALID",
+        "expiry_date": "2025-12-31 08:59:59"
+        },
+        {
+        "activated_device_uuid": "",
+        "status": "VALID",
+        "expiry_date": "2025-12-31 08:59:59"
+        },
+        {
+        "activated_device_uuid": "",
+        "status": "VALID",
+        "expiry_date": "2025-12-31 08:59:59"
+        },
+        {
+        "activated_device_uuid": "",
+        "status": "VALID",
+        "expiry_date": "2025-12-31 08:59:59"
+        }
+]
