@@ -7,6 +7,10 @@
         {
             "url": "https://raw.githubusercontent.com/giveaway-free/Python-Bot-License/refs/heads/main/RDP%20License.json",
             "expiry_date": "2029-12-31 23:59:59"
+        },
+        {
+            "url": "https://raw.githubusercontent.com/giveaway-free/Python-Bot-License/refs/heads/main/RDP%20License.json",
+            "expiry_date": "2029-12-31 23:59:59"
         }
     ]
 }
