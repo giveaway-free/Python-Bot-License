@@ -7,10 +7,10 @@
       "user_info": "Tuser Ahammed, Owner"
     },
     {
-      "activated_device_uuid": "",
-      "status": "EXPIRED",
-      "expiry_date": "2023-06-15 12:00:00",
-      "user_info": "Jane Smith, janesmith@example.com"
+      "activated_device_uuid": "00000000-0000-0000-0000-3CECEF91E5A0",
+      "status": "VALID",
+      "expiry_date": "2024-12-15 12:00:00",
+      "user_info": "Abdullah Elkholy, "
     },
     {
       "activated_device_uuid": "",
