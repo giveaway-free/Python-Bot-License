@@ -1,15 +1,13 @@
 {
     "LICENSE_URLS": [
         {
-            "UUID_LIMIT": 0,
+            "UUID_LIMIT": 1,
             "url": "https://raw.githubusercontent.com/giveaway-free/Python-Bot-License/refs/heads/main/licenses_bas.json",
-            "uuid_list": ["uuid1", "uuid2", "uuid3", "uuid4", "uuid6"],
             "expiry_date": "2025-12-31 23:59:59"
         },
         {
             "UUID_LIMIT": 3,
             "url": "http://example.com/licenses2",
-            "uuid_list": ["uuid7", "uuid8", "uuid11"],
             "expiry_date": "2025-12-31 23:59:59"
         }
     ]
