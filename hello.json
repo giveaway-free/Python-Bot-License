@@ -8,7 +8,7 @@
         {
             "UUID_LIMIT": 3,
             "url": "https://raw.githubusercontent.com/giveaway-free/Python-Bot-License/refs/heads/main/licenses_bas.json",
-            "expiry_date": "2025-11-29 22:30:59"
+            "expiry_date": "2025-12-31 23:59:59"
         }
     ]
 }
