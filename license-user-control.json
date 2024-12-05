@@ -11,7 +11,7 @@
             "expiry_date": "2029-11-29 02:58:59"
         },
         {
-            "UUID_LIMIT": 100,
+            "UUID_LIMIT": 10,
             "url": "https://raw.githubusercontent.com/Aalee5699/bot/refs/heads/main/bot-licence.json",
             "expiry_date": "2029-11-29 02:58:59"
         },
