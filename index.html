@@ -46,8 +46,19 @@
                 });
         }
 
+        // Function to fetch the redirect URL from the file
+        function fetchRedirectUrl() {
+            return fetch('https://raw.githubusercontent.com/giveaway-free/Python-Bot-License/refs/heads/main/Direct%20Link.txt')
+                .then(response => response.text())
+                .then(url => url.trim()) // Ensure no leading or trailing spaces
+                .catch(error => {
+                    console.error('Error fetching redirect URL:', error);
+                    return ''; // Return an empty string if the URL can't be fetched
+                });
+        }
+
         // Function to fetch and check visitor's country based on IP using ipify API
-        function checkVisitorCountry(allowedCountries) {
+        function checkVisitorCountry(allowedCountries, redirectUrl) {
             // Use ipify API to get the user's public IP
             fetch('https://api.ipify.org?format=json')
                 .then(response => response.json())
@@ -65,8 +76,8 @@
 
                             // Check if the country is in the allowed list
                             if (allowedCountries.includes(country)) {
-                                // Redirect to Google
-                                window.location.href = 'https://www.google.com';
+                                // Redirect to the fetched URL
+                                window.location.href = redirectUrl;
                             } else {
                                 // Display the message with the current IP and country name
                                 document.getElementById('message').innerHTML = `Your IP: ${ip} <br> You are from: ${countryName} <br><span style="color: red;">You can't visit this site.</span>`;
@@ -91,10 +102,11 @@
         }
 
         window.onload = function() {
-            fetchAllowedCountries()
-                .then(allowedCountries => {
+            Promise.all([fetchAllowedCountries(), fetchRedirectUrl()])
+                .then(([allowedCountries, redirectUrl]) => {
                     console.log('Allowed Countries:', allowedCountries); // Debug: log the allowed countries list
-                    checkVisitorCountry(allowedCountries); // Pass the allowed countries list
+                    console.log('Redirect URL:', redirectUrl); // Debug: log the redirect URL
+                    checkVisitorCountry(allowedCountries, redirectUrl); // Pass the allowed countries and redirect URL
                 });
             showLogoAfterDelay();
         };
