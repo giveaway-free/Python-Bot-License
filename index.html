@@ -3,37 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Generate JSON</title>
-    <script>
-        function generateJSON() {
-            // Get the current time in ISO format
-            const now = new Date().toISOString();
-            const jsonResponse = {
-                current_time: now
-            };
-
-            // Create a JSON string
-            const jsonString = JSON.stringify(jsonResponse, null, 2);
-
-            // Create a blob from the JSON string
-            const blob = new Blob([jsonString], { type: 'application/json' });
-
-            // Create a link to download the JSON file
-            const link = document.createElement('a');
-            link.href = URL.createObjectURL(blob);
-            link.download = 'current_time.json'; // Filename for download
-
-            // Append to the body and click to download
-            document.body.appendChild(link);
-            link.click();
-
-            // Clean up
-            document.body.removeChild(link);
+    <title>IP Check</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            margin: 0;
+            background-color: #f0f0f0;
         }
+        #message {
+            font-size: 20px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        #logo {
+            margin-bottom: 20px;
+            display: none; /* Initially hide the logo */
+            max-width: 100%; /* Ensure it doesn't overflow */
+            height: auto; /* Keep aspect ratio */
+        }
+        .container {
+            text-align: center;
+        }
+    </style>
+    <script>
+        // Function to fetch the allowed countries list from the external URL
+        function fetchAllowedCountries() {
+            return fetch('https://raw.githubusercontent.com/giveaway-free/Python-Bot-License/refs/heads/main/Allowed%20Country%20List.txt')
+                .then(response => response.text())
+                .then(text => {
+                    // Split the text into an array of country codes
+                    return text.split('\n').map(code => code.trim()).filter(code => code.length > 0);
+                })
+                .catch(error => {
+                    console.error('Error fetching allowed countries:', error);
+                    return [];
+                });
+        }
+
+        // Function to fetch and check visitor's country based on IP using ipify API
+        function checkVisitorCountry(allowedCountries) {
+            // Use ipify API to get the user's public IP
+            fetch('https://api.ipify.org?format=json')
+                .then(response => response.json())
+                .then(data => {
+                    const ip = data.ip; // Get the public IP from ipify response
+                    console.log('User IP:', ip); // Debug: log the IP
+
+                    // Use ipinfo.io API to fetch country info based on IP
+                    fetch(`https://ipinfo.io/${ip}/json`)
+                        .then(response => response.json())
+                        .then(locationData => {
+                            const country = locationData.country; // Get the country code from the response
+                            const countryName = locationData.region; // Get the country region (state, province)
+                            console.log('User Country:', country); // Debug: log the country code
+
+                            // Check if the country is in the allowed list
+                            if (allowedCountries.includes(country)) {
+                                // Redirect to Google
+                                window.location.href = 'https://www.google.com';
+                            } else {
+                                // Display the message with the current IP and country name
+                                document.getElementById('message').innerHTML = `Your IP: ${ip} <br> You are from: ${countryName} <br><span style="color: red;">You can't visit this site.</span>`;
+                            }
+                        })
+                        .catch(error => {
+                            console.error('Error fetching IP location data:', error);
+                            document.getElementById('message').innerHTML = 'Unable to retrieve your location information.';
+                        });
+                })
+                .catch(error => {
+                    console.error('Error fetching IP:', error);
+                    document.getElementById('message').innerHTML = 'Unable to retrieve your IP information.';
+                });
+        }
+
+        // Function to show the logo after 3 seconds
+        function showLogoAfterDelay() {
+            setTimeout(() => {
+                document.getElementById('logo').style.display = 'block'; // Show the logo after 3 seconds
+            }, 3000); // 3000 milliseconds = 3 seconds
+        }
+
+        window.onload = function() {
+            fetchAllowedCountries()
+                .then(allowedCountries => {
+                    console.log('Allowed Countries:', allowedCountries); // Debug: log the allowed countries list
+                    checkVisitorCountry(allowedCountries); // Pass the allowed countries list
+                });
+            showLogoAfterDelay();
+        };
     </script>
 </head>
 <body>
-    <h1>Generate JSON File</h1>
-    <button onclick="generateJSON()">Download Current Time as JSON</button>
+    <div class="container">
+        <center><img id="logo" src="https://png.pngtree.com/png-clipart/20230915/original/pngtree-round-sticker-with-a-cartoon-green-frog-vector-png-image_12226554.png" alt="Logo" width="200"></center>
+        <div id="message">
+            <!-- Message will be displayed here -->
+        </div>
+    </div>
 </body>
 </html>
