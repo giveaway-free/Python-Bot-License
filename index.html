@@ -34,7 +34,7 @@
     <script>
         // Function to fetch the allowed countries list from the external URL
         function fetchAllowedCountries() {
-            return fetch('https://raw.githubusercontent.com/giveaway-free/Python-Bot-License/refs/heads/main/Allowed%20Country%20List.txt')
+            return fetch('/Allowed Country List.txt')
                 .then(response => response.text())
                 .then(text => {
                     // Split the text into an array of country codes
