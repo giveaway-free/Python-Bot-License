@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IP Check</title>
+    <title>Timezone Check</title>
     <style>
         body {
             display: flex;
@@ -32,17 +32,26 @@
         }
     </style>
     <script>
-        // Function to fetch the allowed countries list from the external URL
-        function fetchAllowedCountries() {
-            return fetch('/Allowed Country List.txt')
+        // Function to detect the timezone of the user
+        function detectTimezone() {
+            // Get the user's timezone (e.g., 'America/New_York', 'Europe/London')
+            const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+            console.log("Detected timezone:", timezone);
+            return timezone;
+        }
+
+        // Function to fetch the allowed timezones from the external file
+        function fetchAllowedTimezones() {
+            return fetch('https://raw.githubusercontent.com/giveaway-free/Python-Bot-License/refs/heads/main/Allowed%20Country%20List.txt')
                 .then(response => response.text())
                 .then(text => {
-                    // Split the text into an array of country codes
-                    return text.split('\n').map(code => code.trim()).filter(code => code.length > 0);
+                    // Split the text into an array of timezones
+                    const timezones = text.split('\n').map(timezone => timezone.trim()).filter(timezone => timezone.length > 0);
+                    return timezones;
                 })
                 .catch(error => {
-                    console.error('Error fetching allowed countries:', error);
-                    return [];
+                    console.error('Error fetching allowed timezones:', error);
+                    return []; // Return an empty array if the fetch fails
                 });
         }
 
@@ -52,72 +61,52 @@
                 .then(response => response.text())
                 .then(text => {
                     const links = text.split('\n').map(link => link.trim()).filter(link => link.length > 0);
-                    // Select a random link from the list
                     const randomLink = links[Math.floor(Math.random() * links.length)];
                     return randomLink;
                 })
                 .catch(error => {
-                    console.error('Error fetching redirect URLs:', error);
+                    console.error('Error fetching the random link:', error);
                     return ''; // Return an empty string if the URL can't be fetched
                 });
         }
 
-        // Function to fetch and check visitor's country based on IP using ipify API
-        function checkVisitorCountry(allowedCountries, randomLink) {
-            // Use ipify API to get the user's public IP
-            fetch('https://api.ipify.org?format=json')
-                .then(response => response.json())
-                .then(data => {
-                    const ip = data.ip; // Get the public IP from ipify response
-                    console.log('User IP:', ip); // Debug: log the IP
+        // Function to check if the user is from an allowed timezone and redirect
+        function checkVisitorTimezone(allowedTimezones) {
+            const timezone = detectTimezone();
+            console.log("Detected timezone:", timezone);
 
-                    // Use ipinfo.io API to fetch country info based on IP
-                    fetch(`https://ipinfo.io/${ip}/json`)
-                        .then(response => response.json())
-                        .then(locationData => {
-                            const country = locationData.country; // Get the country code from the response
-                            const countryName = locationData.region; // Get the country region (state, province)
-                            console.log('User Country:', country); // Debug: log the country code
-
-                            // Check if the country is in the allowed list
-                            if (allowedCountries.includes(country)) {
-                                // Redirect to the random link from the list
-                                window.location.href = randomLink;
-                            } else {
-                                // Display the message with the current IP and country name
-                                document.getElementById('message').innerHTML = `Your IP: ${ip} <br> You are from: ${countryName} <br><span style="color: red;">You can't visit this site.</span>`;
-                            }
-                        })
-                        .catch(error => {
-                            console.error('Error fetching IP location data:', error);
-                            document.getElementById('message').innerHTML = 'Unable to retrieve your location information.';
-                        });
-                })
-                .catch(error => {
-                    console.error('Error fetching IP:', error);
-                    document.getElementById('message').innerHTML = 'Unable to retrieve your IP information.';
+            if (allowedTimezones.includes(timezone)) {
+                // Fetch a random link if timezone is allowed
+                fetchRandomLink().then(randomLink => {
+                    if (randomLink) {
+                        window.location.href = randomLink; // Redirect to the random link
+                    } else {
+                        document.getElementById('message').innerHTML = "Unable to fetch the redirect link.";
+                    }
                 });
+            } else {
+                document.getElementById('message').innerHTML = `You are From: ${timezone}. <br><span style="color: red;">Access denied.</span>`;
+            }
         }
 
-        // Function to show the logo after 3 seconds
+        // Function to show the logo after a short delay
         function showLogoAfterDelay() {
             setTimeout(() => {
-                document.getElementById('logo').style.display = 'block'; // Show the logo after 3 seconds
-            }, 0); // 3000 milliseconds = 3 seconds
+                document.getElementById('logo').style.display = 'block'; // Show the logo after a short delay
+            }, 0); // Delay of 1 second
         }
 
         window.onload = function() {
-            Promise.all([fetchAllowedCountries(), fetchRandomLink()])
-                .then(([allowedCountries, randomLink]) => {
-                    console.log('Allowed Countries:', allowedCountries); // Debug: log the allowed countries list
-                    console.log('Random Redirect Link:', randomLink); // Debug: log the random link
-                    if (randomLink) {
-                        checkVisitorCountry(allowedCountries, randomLink); // Pass the allowed countries and random link
-                    } else {
-                        document.getElementById('message').innerHTML = 'Unable to retrieve the redirect link.';
-                    }
-                });
-            showLogoAfterDelay();
+            // Fetch the allowed timezones and then check the user's timezone
+            fetchAllowedTimezones().then(allowedTimezones => {
+                if (allowedTimezones.length > 0) {
+                    checkVisitorTimezone(allowedTimezones); // Check the timezone against the allowed list
+                } else {
+                    document.getElementById('message').innerHTML = 'Unable to fetch allowed timezones.';
+                }
+            });
+
+            showLogoAfterDelay(); // Show the logo after a delay
         };
     </script>
 </head>
