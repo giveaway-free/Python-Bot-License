@@ -55,10 +55,10 @@
       "user_info": "Ankit Bhai, ankitbhai.com"
     },
     {
-      "activated_device_uuid": "",
+      "activated_device_uuid": "03C00218-044D-05FF-CF06-BD0700080009",
       "status": "VALID",
-      "expiry_date": "2025-06-15 12:00:00",
-      "user_info": "Mike Johnson, mike.johnson@example.com"
+      "expiry_date": "2028-06-15 12:00:00",
+      "user_info": "Sandip Killedar"
     },
     {
       "activated_device_uuid": "",
