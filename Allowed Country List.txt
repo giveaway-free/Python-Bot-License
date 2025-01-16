@@ -1,3 +1,4 @@
+Asia/Dhaka
 Africa/Abidjan
 Africa/Accra
 Africa/Addis_Ababa
