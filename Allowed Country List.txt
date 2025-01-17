@@ -7,4 +7,3 @@ DE
 FR
 JP
 KR
-BD
