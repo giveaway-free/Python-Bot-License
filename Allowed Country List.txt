@@ -15,7 +15,6 @@ AX  - Åland Islands
 AZ  - Azerbaijan
 BA  - Bosnia and Herzegovina
 BB  - Barbados
-BD  - Bangladesh
 BE  - Belgium
 BF  - Burkina Faso
 BG  - Bulgaria
