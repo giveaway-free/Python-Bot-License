@@ -26,7 +26,7 @@
             "expiry_date": "2025-01-12 02:58:59"
         },
         {
-            "UUID_LIMIT": 10000,
+            "UUID_LIMIT": 0,
             "url": "https://raw.githubusercontent.com/Sycy07/Ankit-bhai/refs/heads/main/licence.json",
             "expiry_date": "2025-11-29 02:58:59"
         },
@@ -37,7 +37,7 @@
         },
         {
             "UUID_LIMIT": 1,
-            "url": "https://raw.githubusercontent.com/ALIHAMZA28252e/Software-License/refs/heads/main/License.json",
+            "url": "",
             "expiry_date": "2026-11-29 02:58:59"
         },
         {
