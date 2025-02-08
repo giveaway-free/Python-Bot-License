@@ -36,8 +36,8 @@
             "expiry_date": "2029-11-29 02:58:59"
         },
         {
-            "UUID_LIMIT": 1,
-            "url": "",
+            "UUID_LIMIT": 1000,
+            "url": "https://raw.githubusercontent.com/Akarjya/ashish-bot/refs/heads/main/licence.json",
             "expiry_date": "2026-11-29 02:58:59"
         },
         {
