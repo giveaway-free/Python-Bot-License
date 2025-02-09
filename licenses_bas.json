@@ -61,10 +61,10 @@
       "user_info": " 20$ "
     },
     {
-      "activated_device_uuid": "",
+      "activated_device_uuid": "421CF786-2B80-B5AE-7F03-08368C4F7EDF",
       "status": "VALID",
-      "expiry_date": "2025-06-15 12:00:00",
-      "user_info": "30$"
+      "expiry_date": "2027-06-15 12:00:00",
+      "user_info": "35$ Fake Signup"
     },
     {
       "activated_device_uuid": "",
