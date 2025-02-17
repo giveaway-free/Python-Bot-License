@@ -73,10 +73,10 @@
       "user_info": "Mike Johnson, mike.johnson@example.com"
     },
     {
-      "activated_device_uuid": "",
+      "activated_device_uuid": "DB258202-D5D4-EFD4-E619-B3985A1A399D",
       "status": "VALID",
-      "expiry_date": "2025-06-15 12:00:00",
-      "user_info": "Mike Johnson, mike.johnson@example.com"
+      "expiry_date": "2025-02-22 12:00:00",
+      "user_info": "20$"
     },
     {
       "activated_device_uuid": "",
