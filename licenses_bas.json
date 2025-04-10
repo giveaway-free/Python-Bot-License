@@ -103,10 +103,10 @@
       "user_info": "Mike Johnson, mike.johnson@example.com"
     },
     {
-      "activated_device_uuid": "",
+      "activated_device_uuid": "03560274-043C-0586-3206-B80700080009",
       "status": "VALID",
-      "expiry_date": "2025-06-15 12:00:00",
-      "user_info": "Mike Johnson, mike.johnson@example.com"
+      "expiry_date": "2028-06-15 12:00:00",
+      "user_info": "Digital IT Institute, mike.johnson@example.com"
     },
     {
       "activated_device_uuid": "",
