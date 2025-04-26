@@ -67,10 +67,10 @@
       "user_info": "35$ Fake Signup"
     },
     {
-      "activated_device_uuid": "",
+      "activated_device_uuid": "035E02D8-04D3-059E-1E06-B00700080009",
       "status": "VALID",
-      "expiry_date": "2023-06-15 12:00:00",
-      "user_info": "Mike Johnson, mike.johnson@example.com"
+      "expiry_date": "2029-06-15 12:00:00",
+      "user_info": "Mazidul Islam, mazidulmanik11@gmail.com"
     },
     {
       "activated_device_uuid": "DB258202-D5D4-EFD4-E619-B3985A1A399D",
