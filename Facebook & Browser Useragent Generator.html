@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>🔥 Ultimate User Agent Generator 🔥</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #6e8efb, #a777e3);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      transition: background 0.4s ease;
+    }
+
+    .dark-mode {
+      background: linear-gradient(135deg, #2c3e50, #4ca1af);
+    }
+
+    .container {
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0px 10px 25px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 1300px;
+      transition: background 0.4s ease;
+    }
+
+    .dark-mode .container {
+      background: #1e272e;
+      color: #ecf0f1;
+    }
+
+    h1 {
+      text-align: center;
+      color: #5f27cd;
+      margin-bottom: 20px;
+    }
+
+    .dark-mode h1 {
+      color: #00cec9;
+    }
+
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-bottom: 30px;
+      justify-content: center;
+    }
+
+    .control-group {
+      flex: 1 1 220px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      font-weight: bold;
+      margin-bottom: 6px;
+      color: #333;
+    }
+
+    .dark-mode label {
+      color: #ecf0f1;
+    }
+
+    input, select {
+      padding: 10px;
+      border: 2px solid #ddd;
+      border-radius: 10px;
+      font-size: 16px;
+      background: #fff;
+    }
+
+    .dark-mode input, .dark-mode select {
+      background: #34495e;
+      color: #fff;
+      border: 2px solid #555;
+    }
+
+    .buttons {
+      text-align: center;
+      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    button {
+      background: linear-gradient(to right, #6a11cb, #2575fc);
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    button:hover {
+      background: linear-gradient(to right, #2575fc, #6a11cb);
+      transform: scale(1.05);
+    }
+
+    .output {
+      margin-top: 30px;
+    }
+
+    #outputArea {
+      width: 100%;
+      height: 300px;
+      padding: 15px;
+      border-radius: 10px;
+      font-family: 'Courier New', monospace;
+      font-size: 14px;
+      background: #f4f4f4;
+      border: 1px solid #ccc;
+      resize: vertical;
+    }
+
+    .dark-mode #outputArea {
+      background: #2d3436;
+      color: #ecf0f1;
+      border: 1px solid #555;
+    }
+
+    h2 {
+      text-align: center;
+      color: #5f27cd;
+    }
+
+    .dark-mode h2 {
+      color: #00cec9;
+    }
+
+    @media (max-width: 768px) {
+      .controls {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+  <h1>🔥 Ultimate User Agent Generator 🔥</h1>
+
+  <div class="controls">
+    <div class="control-group">
+      <label for="brand">Select Brand</label>
+      <select id="brand">
+        <option value="mix">Mix All Brands</option>
+        <option value="Infinix">Infinix</option>
+        <option value="Samsung">Samsung</option>
+        <option value="Xiaomi">Xiaomi</option>
+        <option value="OnePlus">OnePlus</option>
+        <option value="Google">Google</option>
+        <option value="Huawei">Huawei</option>
+        <option value="Oppo">Oppo</option>
+        <option value="Vivo">Vivo</option>
+        <option value="Realme">Realme</option>
+      </select>
+    </div>
+
+    <div class="control-group">
+      <label for="locale">Locale</label>
+      <select id="locale">
+        <option value="">No Options</option>
+        <option value="en_US">English (US)</option>
+        <option value="de_DE">German (DE)</option>
+        <option value="fr_FR">French (FR)</option>
+        <option value="es_ES">Spanish (ES)</option>
+        <option value="it_IT">Italian (IT)</option>
+        <option value="pt_BR">Portuguese (BR)</option>
+        <option value="ru_RU">Russian (RU)</option>
+        <option value="zh_CN">Chinese (CN)</option>
+        <option value="ja_JP">Japanese (JP)</option>
+        <option value="hi_IN">Hindi (IN)</option>
+        <option value="ar_SA">Arabic (SA)</option>
+      </select>
+    </div>
+
+    <div class="control-group">
+      <label for="count">Generate Count</label>
+      <input type="number" id="count" value="500" min="1" max="5000">
+    </div>
+
+    <!-- FBAV Version only visible when User-Agent Type is 'app-style (Dalvik)' -->
+    <div class="control-group" id="fbavContainer" style="display: none;">
+      <label for="version">FBAV Version</label>
+      <input type="text" id="version" value="460.0.0.0">
+    </div>
+
+    <div class="control-group">
+      <label for="uaType">User-Agent Type</label>
+      <select id="uaType">
+        <option value="browser">Browser-style</option>
+        <option value="dalvik">App-Style (Facebook)</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="buttons">
+    <button id="generate">Generate</button>
+    <button id="clear">Clear</button>
+    <button id="copyAll">Copy All</button>
+    <button id="exportCsv">Export CSV</button>
+    <button id="exportJson">Export JSON</button>
+    <button id="darkModeToggle">🌙 Toggle Dark Mode</button>
+  </div>
+
+  <div class="output">
+    <h2>Generated Count: <span id="generatedCount">0</span></h2>
+    <textarea id="outputArea" readonly></textarea>
+  </div>
+</div>
+
+<script>
+  const devices = {
+    Infinix: [
+      { model: 'Zero 5G', vendor: 'Infinix', hardware: 'X6820' },
+      { model: 'Hot 12', vendor: 'Infinix', hardware: 'X6810' },
+      { model: 'Note 11 Pro', vendor: 'Infinix', hardware: 'X6880' },
+      { model: 'Smart 6', vendor: 'Infinix', hardware: 'X6888' },
+      { model: 'Note 30', vendor: 'Infinix', hardware: 'X6890' },
+      { model: 'Hot 30i', vendor: 'Infinix', hardware: 'X6900' },
+      { model: 'Zero Ultra', vendor: 'Infinix', hardware: 'X6950' },
+      { model: 'Zero X Pro', vendor: 'Infinix', hardware: 'X6940' },
+      { model: 'Note 12 G96', vendor: 'Infinix', hardware: 'X6922' }
+    ],
+    Samsung: [
+      { model: 'Galaxy S22', vendor: 'Samsung', hardware: 'SM-S901B' },
+      { model: 'Galaxy A52', vendor: 'Samsung', hardware: 'SM-A525F' },
+      { model: 'Galaxy Note 20', vendor: 'Samsung', hardware: 'SM-N981B' },
+      { model: 'Galaxy M31', vendor: 'Samsung', hardware: 'SM-M315F' },
+      { model: 'Galaxy S23 Ultra', vendor: 'Samsung', hardware: 'SM-S918B' },
+      { model: 'Galaxy A73', vendor: 'Samsung', hardware: 'SM-A736B' },
+      { model: 'Galaxy M13', vendor: 'Samsung', hardware: 'SM-M135F' },
+      { model: 'Galaxy Z Fold 4', vendor: 'Samsung', hardware: 'SM-F936B' },
+      { model: 'Galaxy A14', vendor: 'Samsung', hardware: 'SM-A145F' }
+    ],
+    Xiaomi: [
+      { model: 'Redmi Note 11', vendor: 'Xiaomi', hardware: '2201117TG' },
+      { model: 'Mi 11X', vendor: 'Xiaomi', hardware: 'M2101K9AG' },
+      { model: 'Poco X3 Pro', vendor: 'Xiaomi', hardware: 'K9B' },
+      { model: 'Mi 10T', vendor: 'Xiaomi', hardware: 'M2007J3SG' },
+      { model: 'Redmi K50', vendor: 'Xiaomi', hardware: '22021211RI' },
+      { model: 'Redmi 12C', vendor: 'Xiaomi', hardware: '2203336C' },
+      { model: 'Poco F4', vendor: 'Xiaomi', hardware: '22021311G' },
+      { model: 'Xiaomi 13', vendor: 'Xiaomi', hardware: '2203129G' },
+      { model: 'Redmi Note 12 Pro+', vendor: 'Xiaomi', hardware: '22121317G' }
+    ],
+    // Add similar objects for other brands (OnePlus, Google, etc.)
+  };
+
+  function getRandomElement(arr) {
+    return arr[Math.floor(Math.random() * arr.length)];
+  }
+
+  function generateUserAgent(brand, locale, version, type) {
+    let brandToUse = brand;
+    if (brand === 'mix') {
+      const allBrands = Object.keys(devices);
+      brandToUse = getRandomElement(allBrands);
+    }
+    const device = getRandomElement(devices[brandToUse]);
+    const androidVersion = Math.floor(Math.random() * (14 - 10 + 1)) + 10;
+
+    if (type === 'dalvik') {
+      const formatChoice = Math.random() > 0.5 ? 1 : 2;
+      const fbavSubVersion = Math.floor(Math.random() * 100);
+      const buildNumber = Math.random().toString(36).substring(2, 8).toUpperCase();
+
+      if (formatChoice === 1) {
+        return `Mozilla/5.0 (Linux; Android ${androidVersion}; ${device.model} Build/${buildNumber}; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/135.0.7049.105 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/${version}.${fbavSubVersion};IABMV/1;]`;
+      } else {
+        return `Mozilla/5.0 (Linux; Android ${androidVersion}; ${device.model} Build/${buildNumber}; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/135.0.7049.100 Mobile Safari/537.36[FBAN/EMA;FBLC/${locale};FBAV/${version}.${fbavSubVersion};FBCX/modulariab;]`;
+      }
+    } else {
+      const chromeVersion = `${Math.floor(Math.random() * 10) + 100}.0.${Math.floor(Math.random() * 4000)}.0`;
+      return `Mozilla/5.0 (Linux; Android ${androidVersion}; ${device.model}) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/${chromeVersion} Mobile Safari/537.36`;
+    }
+  }
+
+  document.getElementById('generate').addEventListener('click', () => {
+    const brand = document.getElementById('brand').value;
+    const locale = document.getElementById('locale').value;
+    const count = parseInt(document.getElementById('count').value, 10);
+    const version = document.getElementById('version').value;
+    const uaType = document.getElementById('uaType').value;
+    const outputArea = document.getElementById('outputArea');
+    let generatedText = '';
+
+    for (let i = 0; i < count; i++) {
+      generatedText += generateUserAgent(brand, locale, version, uaType) + '\n';
+    }
+
+    outputArea.value = generatedText.trim();
+    document.getElementById('generatedCount').textContent = count;
+  });
+
+  document.getElementById('clear').addEventListener('click', () => {
+    document.getElementById('outputArea').value = '';
+    document.getElementById('generatedCount').textContent = '0';
+  });
+
+  document.getElementById('copyAll').addEventListener('click', () => {
+    const textArea = document.getElementById('outputArea');
+    textArea.select();
+    document.execCommand('copy');
+    alert('All User-Agents copied to clipboard!');
+  });
+
+  document.getElementById('exportCsv').addEventListener('click', () => {
+    const data = document.getElementById('outputArea').value;
+    if (data.trim() === '') {
+      alert('Nothing to export!');
+      return;
+    }
+    const blob = new Blob([data.replace(/\n/g, '\r\n')], { type: 'text/csv' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'user_agents.csv';
+    a.click();
+  });
+
+  document.getElementById('exportJson').addEventListener('click', () => {
+    const data = document.getElementById('outputArea').value;
+    if (data.trim() === '') {
+      alert('Nothing to export!');
+      return;
+    }
+    const jsonData = JSON.stringify(data.split('\n'));
+    const blob = new Blob([jsonData], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'user_agents.json';
+    a.click();
+  });
+
+  document.getElementById('darkModeToggle').addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+  });
+
+  // Toggle visibility of FBAV version input based on User-Agent Type selection
+  document.getElementById('uaType').addEventListener('change', (e) => {
+    const fbavContainer = document.getElementById('fbavContainer');
+    if (e.target.value === 'dalvik') {
+      fbavContainer.style.display = 'block';
+    } else {
+      fbavContainer.style.display = 'none';
+    }
+  });
+</script>
+
+</body>
+</html>
