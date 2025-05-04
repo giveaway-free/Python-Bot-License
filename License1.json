@@ -1,3 +1,10 @@
 {
-  "licenses": []
+  "licenses": [
+    {
+      "activated_device_uuid": "dsfvffdv",
+      "status": "VALID",
+      "expiry_date": "2025-05-04 19:48:00",
+      "user_info": "gdhfg"
+    }
+  ]
 }
