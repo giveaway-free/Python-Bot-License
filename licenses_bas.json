@@ -14,7 +14,7 @@
     },
     {
       "activated_device_uuid": "03000200-0400-0500-0006-000700080009",
-      "status": "VALID",
+      "status": "INVALID",
       "expiry_date": "2022-06-15 12:00:00",
       "user_info": "Bondhu Metalic, "
     },
@@ -44,7 +44,7 @@
     },
     {
       "activated_device_uuid": "03000200-0400-0500-0006-000700080009",
-      "status": "VALID",
+      "status": "INVALID",
       "expiry_date": "2024-06-15 12:00:00",
       "user_info": "Aalee, Bro"
     },
