@@ -115,16 +115,16 @@
       "user_info": "Emon Vai, mike.johnson@example.com"
     },
     {
-      "activated_device_uuid": "",
+      "activated_device_uuid": "038D0240-045C-059D-D806-100700080009",
       "status": "VALID",
       "expiry_date": "2029-12-31 23:59:59",
-      "user_info": ""
+      "user_info": "mazidulmanik11@gmail.com"
     },
     {
-      "activated_device_uuid": "",
+      "activated_device_uuid": "769A2DDC-D2D6-843B-155A-D1CC0461FE17",
       "status": "VALID",
-      "expiry_date": "2025-06-15 12:00:00",
-      "user_info": "Mike Johnson, mike.johnson@example.com"
+      "expiry_date": "2029-06-15 12:00:00",
+      "user_info": "mazidulmanik11@gmail.com"
     },
     {
       "activated_device_uuid": "",
