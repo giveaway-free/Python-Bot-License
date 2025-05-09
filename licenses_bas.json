@@ -97,10 +97,10 @@
       "user_info": "Faisal"
     },
     {
-      "activated_device_uuid": "",
+      "activated_device_uuid": "E4A03CF3-3A38-EB11-8108-6C02E01108F1",
       "status": "VALID",
-      "expiry_date": "2022-06-15 12:00:00",
-      "user_info": "Mike Johnson, mike.johnson@example.com"
+      "expiry_date": "2029-06-15 12:00:00",
+      "user_info": "Chiemeka"
     },
     {
       "activated_device_uuid": "03560274-043C-0586-3206-B80700080009",
