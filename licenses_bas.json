@@ -25,12 +25,6 @@
       "user_info": "Mike Johnson, mike.johnson@example.com"
     },
     {
-      "activated_device_uuid": "D5CBC64C-333C-11B2-A85C-89D5C4199021",
-      "status": "VALID",
-      "expiry_date": "2025-03-15 12:00:00",
-      "user_info": "Mana Velan, 50$"
-    },
-    {
       "activated_device_uuid": "2D006B9C-F252-0000-0000-000000000000",
       "status": "VALID",
       "expiry_date": "2029-06-15 12:00:00",
