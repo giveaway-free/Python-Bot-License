@@ -25,12 +25,6 @@
       "user_info": "Mazidul Islam, mazidulmanik11@gmail.com"
     },
     {
-      "activated_device_uuid": "12E7835B-C105-1748-2BF7-1C872C5F5526",
-      "status": "VALID",
-      "expiry_date": "2025-06-15 12:00:00",
-      "user_info": "Mike Johnson, mike.johnson@example.com"
-    },
-    {
       "activated_device_uuid": "D1B3131B-EFA7-11E5-8C0F-64CD120340C8",
       "status": "VALID",
       "expiry_date": "2022-06-15 12:00:00",
