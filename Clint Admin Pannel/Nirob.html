@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>License Control Panel</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(120deg, #89f7fe, #66a6ff);
+            padding: 30px;
+            animation: gradientShift 10s ease infinite;
+            background-size: 400% 400%;
+        }
+
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 25px;
+            max-width: 600px;
+            margin: auto;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            animation: fadeInUp 1s ease;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            font-size: 28px;
+            margin-bottom: 20px;
+            background: linear-gradient(45deg, #ff6ec4, #7873f5);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: pulse 3s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .save-btn {
+            margin-top: 25px;
+            text-align: center;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-image: linear-gradient(45deg, #42e695, #3bb2b8);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            background-image: linear-gradient(45deg, #3bb2b8, #42e695);
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        .spinner-overlay {
+            display: none;
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background-color: rgba(0,0,0,0.3);
+            z-index: 9999;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .spinner {
+            border: 6px solid #f3f3f3;
+            border-top: 6px solid #007bff;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        #messageBox {
+            margin-top: 20px;
+            padding: 12px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-align: center;
+            display: none;
+        }
+
+        #messageBox.success {
+            background-color: #d4edda;
+            color: #155724;
+        }
+
+        #messageBox.error {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+
+        .license-item {
+            background: linear-gradient(135deg, #fdfbfb, #ebedee);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .license-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+        }
+
+        .edit-btn, .remove-btn {
+            padding: 6px 12px;
+            margin-right: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .edit-btn {
+            background-color: #ffc107;
+            color: white;
+        }
+
+        .remove-btn {
+            background-color: #dc3545;
+            color: white;
+        }
+
+        .edit-btn:hover {
+            background-color: #e0a800;
+        }
+
+        .remove-btn:hover {
+            background-color: #c82333;
+        }
+
+        .search-bar {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .search-bar input {
+            width: 300px;
+        }
+
+
+
+        .colorful-uuid {
+    background: linear-gradient(90deg, #5d4d7a, #b8061e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    animation: uuidShift 6s ease infinite;
+    background-size: 200% auto;
+}
+
+.colorful-status {
+    background: linear-gradient(90deg, #12b404, #023f07);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    animation: statusShift 6s ease infinite;
+    background-size: 200% auto;
+}
+
+.colorful-expiry {
+    background: linear-gradient(90deg, #ff6a00, #ee0979);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    animation: expiryShift 6s ease infinite;
+    background-size: 200% auto;
+}
+
+.colorful-user {
+    background: linear-gradient(90deg, #ef0af7, #04dee6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    animation: userColorShift 6s ease infinite;
+    background-size: 200% auto;
+}
+
+@keyframes uuidShift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+}
+
+@keyframes statusShift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+}
+
+@keyframes expiryShift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+}
+
+@keyframes userColorShift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+}
+
+
+
+
+
+
+
+        
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>License Control Panel</h2>
+
+    <!-- Search Section -->
+    <div class="search-bar">
+        <label for="searchInput">Search License by UUID or Username:</label>
+        <input type="text" id="searchInput" placeholder="Enter UUID or Username">
+        <button onclick="searchLicenses()">🔍 Search</button>
+    </div>
+
+    <div style="text-align: center; margin-bottom: 20px;">
+        <button onclick="fetchAndShowLicenses()">📋 Show All Licenses</button>
+    </div>
+
+    <label for="uuid">UUID:</label>
+    <input type="text" id="uuid" name="uuid" placeholder="Enter UUID">
+
+    <label for="status">Status:</label>
+    <select id="status" name="status">
+        <option value="VALID">VALID</option>
+        <option value="INVALID">INVALID</option>
+    </select>
+
+    <label for="expiry">License Expire Date & Time:</label>
+    <input type="datetime-local" id="expiry" name="expiry">
+
+    <label for="username">User Name:</label>
+    <input type="text" id="username" name="username" placeholder="Enter User Name">
+
+    <div class="save-btn">
+        <button onclick="saveToGithub()">💾 Save</button>
+    </div>
+
+    <div id="messageBox"></div>
+</div>
+
+<div class="container" id="licenseList" style="margin-top: 20px; display: none;"></div>
+
+<div class="spinner-overlay" id="spinnerOverlay">
+    <div class="spinner"></div>
+</div>
+
+<script>
+    const githubUsername = "nirob1979";
+    const repo = "davil";
+    const token = "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";
+    const filePath = "License.json";
+    const branch = "main";
+    const apiUrl = `https://api.github.com/repos/${githubUsername}/${repo}/contents/${filePath}`;
+
+    let licensesData = [];
+    let selectedLicenseIndex = null;
+
+    async function saveToGithub() {
+        const uuid = document.getElementById("uuid").value.trim();
+        const status = document.getElementById("status").value.trim().toUpperCase();
+        const expiryRaw = document.getElementById("expiry").value.trim();
+        const username = document.getElementById("username").value.trim();
+        const spinner = document.getElementById("spinnerOverlay");
+        const messageBox = document.getElementById("messageBox");
+
+        messageBox.style.display = "none";
+
+        if (!uuid || !expiryRaw || !username) {
+            showMessage("Please fill all fields.", "error");
+            return;
+        }
+
+        const expiry = expiryRaw.replace("T", " ") + ":00";
+
+        const newLicense = {
+            activated_device_uuid: uuid,
+            status: status,
+            expiry_date: expiry,
+            user_info: username
+        };
+
+        spinner.style.display = "flex";
+
+        try {
+            const getResponse = await fetch(apiUrl, {
+                headers: {
+                    Authorization: `token ${token}`,
+                    Accept: "application/vnd.github.v3+json"
+                }
+            });
+
+            if (!getResponse.ok) throw new Error("Failed to load existing File");
+
+            const fileData = await getResponse.json();
+            const decodedContent = atob(fileData.content || "");
+            let jsonData = {};
+            try {
+                jsonData = JSON.parse(decodedContent);
+            } catch {
+                jsonData = { licenses: [] };
+            }
+
+            if (!Array.isArray(jsonData.licenses)) jsonData.licenses = [];
+
+            if (selectedLicenseIndex !== null) {
+                jsonData.licenses[selectedLicenseIndex] = newLicense;  // Update existing license
+            } else {
+                jsonData.licenses.push(newLicense);  // Add new license
+            }
+
+            const updatedContent = btoa(JSON.stringify(jsonData, null, 2));
+
+            const putResponse = await fetch(apiUrl, {
+                method: "PUT",
+                headers: {
+                    Authorization: `token ${token}`,
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    message: "Add or Update license entry",
+                    content: updatedContent,
+                    sha: fileData.sha,
+                    branch: branch
+                })
+            });
+
+            if (!putResponse.ok) throw new Error("Failed to save license to GitHub");
+
+            showMessage("✅ License saved successfully to GitHub!", "success");
+            resetForm();
+        } catch (error) {
+            console.error("Error:", error);
+            showMessage("❌ " + error.message, "error");
+        } finally {
+            spinner.style.display = "none";
+        }
+    }
+
+    function resetForm() {
+        document.getElementById("uuid").value = "";
+        document.getElementById("status").value = "VALID";
+        document.getElementById("expiry").value = "";
+        document.getElementById("username").value = "";
+        selectedLicenseIndex = null;
+    }
+
+    function showMessage(message, type) {
+        const messageBox = document.getElementById("messageBox");
+        messageBox.textContent = message;
+        messageBox.className = type === "success" ? "success" : "error";
+        messageBox.classList.add("message-box");
+        messageBox.style.display = "block";
+    }
+
+    async function fetchAndShowLicenses() {
+        const licenseList = document.getElementById("licenseList");
+        const spinner = document.getElementById("spinnerOverlay");
+        licenseList.innerHTML = "";
+        spinner.style.display = "flex";
+
+        try {
+            const getResponse = await fetch(apiUrl, {
+                headers: {
+                    Authorization: `token ${token}`,
+                    Accept: "application/vnd.github.v3+json"
+                }
+            });
+
+            if (!getResponse.ok) throw new Error("Failed to fetch licenses");
+
+            const fileData = await getResponse.json();
+            const decodedContent = atob(fileData.content || "");
+            const jsonData = JSON.parse(decodedContent);
+
+            if (!Array.isArray(jsonData.licenses)) throw new Error("License data is invalid");
+
+            licenseList.style.display = "block";
+            licenseList.innerHTML = "<h3>All Licenses</h3>";
+
+            jsonData.licenses.forEach((license, index) => {
+                const licenseItem = document.createElement("div");
+                licenseItem.classList.add("license-item");
+                licenseItem.innerHTML = `
+    <strong>UUID:</strong> <span class="colorful-uuid">${license.activated_device_uuid}</span><br>
+    <strong>Status:</strong> <span class="colorful-status">${license.status}</span><br>
+    <strong>Expiry:</strong> <span class="colorful-expiry">${license.expiry_date}</span><br>
+    <strong>User:</strong> <span class="colorful-user">${license.user_info}</span><br><br>
+    <button class="edit-btn" onclick="editLicense(${index})">✏️ Edit</button>
+    <button class="remove-btn" onclick="removeLicense(${index})">❌ Remove</button>
+`;
+
+                licenseList.appendChild(licenseItem);
+            });
+
+            licensesData = jsonData.licenses;
+        } catch (error) {
+            showMessage("❌ " + error.message, "error");
+        } finally {
+            spinner.style.display = "none";
+        }
+    }
+
+    function editLicense(index) {
+        selectedLicenseIndex = index;
+        const license = licensesData[index];
+
+        document.getElementById("uuid").value = license.activated_device_uuid;
+        document.getElementById("status").value = license.status;
+        document.getElementById("expiry").value = license.expiry_date.replace(" ", "T").slice(0, -3);
+        document.getElementById("username").value = license.user_info;
+    }
+
+    function removeLicense(index) {
+        const spinner = document.getElementById("spinnerOverlay");
+
+        if (confirm("Are you sure you want to remove this license?")) {
+            spinner.style.display = "flex";
+            licensesData.splice(index, 1);  // Remove the license from the array
+
+            // Update the GitHub file
+            updateLicensesFile();
+        }
+    }
+
+    async function updateLicensesFile() {
+        const spinner = document.getElementById("spinnerOverlay");
+
+        try {
+            const getResponse = await fetch(apiUrl, {
+                headers: {
+                    Authorization: `token ${token}`,
+                    Accept: "application/vnd.github.v3+json"
+                }
+            });
+
+            if (!getResponse.ok) throw new Error("Failed to fetch the license file");
+
+            const fileData = await getResponse.json();
+            const updatedContent = btoa(JSON.stringify({ licenses: licensesData }, null, 2));
+
+            const putResponse = await fetch(apiUrl, {
+                method: "PUT",
+                headers: {
+                    Authorization: `token ${token}`,
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    message: "Update license list after removal",
+                    content: updatedContent,
+                    sha: fileData.sha,
+                    branch: branch
+                })
+            });
+
+            if (!putResponse.ok) throw new Error("Failed to update the license file");
+
+            showMessage("✅ License removed successfully!", "success");
+            fetchAndShowLicenses();
+        } catch (error) {
+            showMessage("❌ " + error.message, "error");
+        } finally {
+            spinner.style.display = "none";
+        }
+    }
+
+    function searchLicenses() {
+        const searchQuery = document.getElementById("searchInput").value.toLowerCase();
+        const filteredLicenses = licensesData.filter(license => {
+            return license.activated_device_uuid.toLowerCase().includes(searchQuery) ||
+                   license.user_info.toLowerCase().includes(searchQuery);
+        });
+
+        displayFilteredLicenses(filteredLicenses);
+    }
+
+    function displayFilteredLicenses(filteredLicenses) {
+    const licenseList = document.getElementById("licenseList");
+    licenseList.innerHTML = "<h3>Search Results</h3>";
+
+    filteredLicenses.forEach((license, index) => {
+        const licenseItem = document.createElement("div");
+        licenseItem.classList.add("license-item");
+        licenseItem.innerHTML = `
+            <strong>UUID:</strong> <span class="colorful-uuid">${license.activated_device_uuid}</span><br>
+            <strong>Status:</strong> <span class="colorful-status">${license.status}</span><br>
+            <strong>Expiry:</strong> <span class="colorful-expiry">${license.expiry_date}</span><br>
+            <strong>User:</strong> <span class="colorful-user">${license.user_info}</span><br><br>
+            <button class="edit-btn" onclick="editLicense(${index})">✏️ Edit</button>
+            <button class="remove-btn" onclick="removeLicense(${index})">❌ Remove</button>
+        `;
+        licenseList.appendChild(licenseItem);
+    });
+}
+
+</script>
+
+</body>
+</html>
