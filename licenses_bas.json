@@ -25,12 +25,6 @@
       "user_info": "Mike Johnson, mike.johnson@example.com"
     },
     {
-      "activated_device_uuid": "A490E524-A483-11E6-A80F-4506B90080D5",
-      "status": "VALID",
-      "expiry_date": "2025-06-15 12:00:00",
-      "user_info": "Dullah, dullah.com"
-    },
-    {
       "activated_device_uuid": "D5CBC64C-333C-11B2-A85C-89D5C4199021",
       "status": "VALID",
       "expiry_date": "2025-03-15 12:00:00",
