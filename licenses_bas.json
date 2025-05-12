@@ -19,12 +19,6 @@
       "user_info": "Bondhu Metalic, "
     },
     {
-      "activated_device_uuid": "69D82FBD-5B46-49D8-861B-C48C6FB616AD",
-      "status": "VALID",
-      "expiry_date": "2025-06-15 12:00:00",
-      "user_info": "Mike Johnson, mike.johnson@example.com"
-    },
-    {
       "activated_device_uuid": "2D006B9C-F252-0000-0000-000000000000",
       "status": "VALID",
       "expiry_date": "2029-06-15 12:00:00",
