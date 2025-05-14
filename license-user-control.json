@@ -16,9 +16,9 @@
             "expiry_date": "2029-11-29 02:58:59"
         },
         {
-            "UUID_LIMIT": 1,
-            "url": "",
-            "expiry_date": "2025-11-29 02:58:59"
+            "UUID_LIMIT": 1000000,
+            "url": "https://raw.githubusercontent.com/giveaway-free/Feed-Search-Click-Bas-Software/refs/heads/main/licenses_bas.json",
+            "expiry_date": "2029-11-29 02:58:59"
         },
         {
             "UUID_LIMIT": 0,
