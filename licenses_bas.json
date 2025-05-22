@@ -59,6 +59,12 @@
       "status": "VALID",
       "expiry_date": "2030-05-18 14:59:00",
       "user_info": "Digital It Institute"
+    },
+    {
+      "activated_device_uuid": "292C217A-80B7-7E15-177F-D7CA32674DFA",
+      "status": "VALID",
+      "expiry_date": "2030-05-22 18:13:00",
+      "user_info": "Digital It Institute, 3"
     }
   ]
 }
