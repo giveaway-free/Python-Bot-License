@@ -37,12 +37,6 @@
       "user_info": "Chiemeka"
     },
     {
-      "activated_device_uuid": "03560274-043C-0586-3206-B80700080009",
-      "status": "VALID",
-      "expiry_date": "2028-06-15 12:00:00",
-      "user_info": "Digital IT Institute, 1"
-    },
-    {
       "activated_device_uuid": "038D0240-045C-059D-D806-100700080009",
       "status": "VALID",
       "expiry_date": "2029-12-31 23:59:59",
