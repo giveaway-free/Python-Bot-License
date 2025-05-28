@@ -11,6 +11,12 @@
       "status": "VALID",
       "expiry_date": "2030-01-29 00:28:00",
       "user_info": "SD Vai"
+    },
+    {
+      "activated_device_uuid": "03560274-043C-0586-3206-B80700080009",
+      "status": "VALID",
+      "expiry_date": "2030-06-07 03:24:00",
+      "user_info": "Admin"
     }
   ]
 }
