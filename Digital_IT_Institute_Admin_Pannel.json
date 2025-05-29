@@ -23,6 +23,12 @@
       "status": "VALID",
       "expiry_date": "2032-05-29 15:01:00",
       "user_info": "mazharul islam masum"
+    },
+    {
+      "activated_device_uuid": "1646197E-C95B-496E-91C4-FC5CEE223F66",
+      "status": "VALID",
+      "expiry_date": "2026-05-29 17:04:00",
+      "user_info": "KHALID HASSAN BAPPY"
     }
   ]
 }
