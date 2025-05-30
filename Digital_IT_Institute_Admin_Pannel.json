@@ -29,6 +29,12 @@
       "status": "VALID",
       "expiry_date": "2026-05-29 17:04:00",
       "user_info": "KHALID HASSAN BAPPY"
+    },
+    {
+      "activated_device_uuid": "4CF91C5F-160F-4D13-4B96-6EAEF2FD7D95",
+      "status": "VALID",
+      "expiry_date": "2030-01-30 15:54:00",
+      "user_info": "Abdur Nur"
     }
   ]
 }
