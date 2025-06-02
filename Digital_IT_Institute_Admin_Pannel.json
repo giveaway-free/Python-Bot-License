@@ -35,6 +35,12 @@
       "status": "VALID",
       "expiry_date": "2030-01-30 15:54:00",
       "user_info": "Abdur Nur"
+    },
+    {
+      "activated_device_uuid": "7D22A8FF-8C09-11E7-B909-6A0E720140C1",
+      "status": "VALID",
+      "expiry_date": "2029-03-02 10:13:00",
+      "user_info": "Tushar Ameen"
     }
   ]
 }
