@@ -53,6 +53,12 @@
       "status": "VALID",
       "expiry_date": "2032-06-03 20:55:00",
       "user_info": "Shahariar"
+    },
+    {
+      "activated_device_uuid": "6B12F080-08C1-F709-4FEF-544B4E18DD59",
+      "status": "VALID",
+      "expiry_date": "2026-06-05 17:19:00",
+      "user_info": "Rakibul islam Mummith"
     }
   ]
 }
