@@ -65,6 +65,12 @@
       "status": "VALID",
       "expiry_date": "2030-06-09 22:56:00",
       "user_info": "SD VAI"
+    },
+    {
+      "activated_device_uuid": "D3D0A5C2-A088-EB11-810A-14CB19666D4E",
+      "status": "VALID",
+      "expiry_date": "2025-07-14 15:23:00",
+      "user_info": "Forhad Hosen"
     }
   ]
 }
