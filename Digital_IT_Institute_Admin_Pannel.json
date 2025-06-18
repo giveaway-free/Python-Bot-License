@@ -83,12 +83,6 @@
       "status": "VALID",
       "expiry_date": "2025-07-16 21:29:00",
       "user_info": "Sumon Tarafdar"
-    },
-    {
-      "activated_device_uuid": "34D01EB8-D7BC-6F85-153D-B7B32E86CB59",
-      "status": "VALID",
-      "expiry_date": "2025-07-17 13:20:00",
-      "user_info": "Limon Hossain"
     }
   ]
 }
