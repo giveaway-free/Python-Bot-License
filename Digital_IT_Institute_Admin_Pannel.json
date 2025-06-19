@@ -83,6 +83,12 @@
       "status": "VALID",
       "expiry_date": "2025-07-16 21:29:00",
       "user_info": "Sumon Tarafdar"
+    },
+    {
+      "activated_device_uuid": "038D0240-045C-0556-2D06-510700080009",
+      "status": "VALID",
+      "expiry_date": "2029-06-19 14:06:00",
+      "user_info": "Official PC"
     }
   ]
 }
