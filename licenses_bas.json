@@ -53,6 +53,12 @@
       "status": "VALID",
       "expiry_date": "2032-02-18 22:45:00",
       "user_info": "Shimul"
+    },
+    {
+      "activated_device_uuid": "282839CC-2CE2-11B2-A85C-E78AFC3747AB",
+      "status": "VALID",
+      "expiry_date": "2031-10-21 19:08:00",
+      "user_info": "Puneeth Rallapalli"
     }
   ]
 }
