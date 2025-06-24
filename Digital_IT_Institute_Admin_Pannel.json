@@ -89,6 +89,12 @@
       "status": "VALID",
       "expiry_date": "2029-06-19 14:06:00",
       "user_info": "Official PC"
+    },
+    {
+      "activated_device_uuid": "03D40274-0435-052E-A006-210700080009",
+      "status": "VALID",
+      "expiry_date": "2030-06-25 01:07:00",
+      "user_info": "Office Starex"
     }
   ]
 }
