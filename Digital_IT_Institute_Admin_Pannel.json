@@ -161,6 +161,12 @@
       "status": "VALID",
       "expiry_date": "2025-07-30 14:46:00",
       "user_info": "@cryptosorus"
+    },
+    {
+      "activated_device_uuid": "4BC2E1FE-7358-4209-AFBB-8E325E3C604B",
+      "status": "VALID",
+      "expiry_date": "2025-07-19 01:32:00",
+      "user_info": "Rohanraz08"
     }
   ]
 }
