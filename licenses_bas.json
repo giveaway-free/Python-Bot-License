@@ -53,6 +53,12 @@
       "status": "VALID",
       "expiry_date": "2032-02-18 22:45:00",
       "user_info": "Shimul"
+    },
+    {
+      "activated_device_uuid": "371F40B8-A2D4-3249-82BE-588BC48525AA",
+      "status": "VALID",
+      "expiry_date": "2060-07-03 12:33:00",
+      "user_info": "MD RASHEDUL ISLAM"
     }
   ]
 }
