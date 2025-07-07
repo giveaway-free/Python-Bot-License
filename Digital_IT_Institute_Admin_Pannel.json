@@ -197,6 +197,12 @@
       "status": "VALID",
       "expiry_date": "2025-07-21 22:31:00",
       "user_info": "@mraihanh"
+    },
+    {
+      "activated_device_uuid": "1646197E-C95B-496E-91C4-FC5CEE223F66",
+      "status": "VALID",
+      "expiry_date": "2026-05-07 18:10:00",
+      "user_info": "KHALID HASSAN BAPPY"
     }
   ]
 }
