@@ -203,6 +203,12 @@
       "status": "VALID",
       "expiry_date": "2026-05-07 18:10:00",
       "user_info": "KHALID HASSAN BAPPY"
+    },
+    {
+      "activated_device_uuid": "62D120A0-BB0E-AD4C-9FFE-0DD9B4E1C17A",
+      "status": "VALID",
+      "expiry_date": "2025-07-30 22:03:00",
+      "user_info": "rhythmbd123"
     }
   ]
 }
