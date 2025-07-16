@@ -65,6 +65,12 @@
       "status": "VALID",
       "expiry_date": "2027-07-11 00:18:00",
       "user_info": "Haxus owner"
+    },
+    {
+      "activated_device_uuid": "7F4A6A41-FF6B-4B91-8B3A-041A3A67C793",
+      "status": "VALID",
+      "expiry_date": "2026-07-16 23:43:00",
+      "user_info": "Rdppp"
     }
   ]
 }
