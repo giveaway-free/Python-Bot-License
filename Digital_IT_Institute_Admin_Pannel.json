@@ -221,6 +221,12 @@
       "status": "VALID",
       "expiry_date": "2029-07-17 18:06:00",
       "user_info": "Office Leonovo"
+    },
+    {
+      "activated_device_uuid": "031B021C-040D-052D-3406-500700080009",
+      "status": "VALID",
+      "expiry_date": "2025-07-28 00:39:00",
+      "user_info": "@Maruf_Bose"
     }
   ]
 }
