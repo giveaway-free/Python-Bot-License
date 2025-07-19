@@ -233,6 +233,12 @@
       "status": "VALID",
       "expiry_date": "2034-07-19 14:37:00",
       "user_info": "MUSA PC STAREX"
+    },
+    {
+      "activated_device_uuid": "0074E188-BD98-9E24-7116-704D7B84450B",
+      "status": "VALID",
+      "expiry_date": "2029-11-19 01:53:00",
+      "user_info": "ONIM PC HI-POWER"
     }
   ]
 }
