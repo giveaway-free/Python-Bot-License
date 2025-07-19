@@ -131,6 +131,12 @@
       "status": "VALID",
       "expiry_date": "2028-07-19 19:55:00",
       "user_info": "Tuhin Laptop"
+    },
+    {
+      "activated_device_uuid": "37D8B8BB-C248-5F18-A083-D843AEB4A098",
+      "status": "VALID",
+      "expiry_date": "2028-11-23 06:56:00",
+      "user_info": "SHAKIL GIGASONIC"
     }
   ]
 }
