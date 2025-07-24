@@ -143,6 +143,12 @@
       "status": "VALID",
       "expiry_date": "2027-06-22 23:06:00",
       "user_info": "LEMON VAI OFFICE"
+    },
+    {
+      "activated_device_uuid": "7C9875FF-09FC-5E1C-A740-345A601F1817",
+      "status": "VALID",
+      "expiry_date": "2029-07-24 16:12:00",
+      "user_info": "LEMON VAI PC"
     }
   ]
 }
