@@ -143,6 +143,12 @@
       "status": "VALID",
       "expiry_date": "2025-08-28 21:36:00",
       "user_info": "@jubayerhassananando"
+    },
+    {
+      "activated_device_uuid": "987ACBB7-CCCB-D438-80C1-5811224B0414",
+      "status": "VALID",
+      "expiry_date": "2025-08-28 21:50:00",
+      "user_info": "@Abrar_joy78"
     }
   ]
 }
