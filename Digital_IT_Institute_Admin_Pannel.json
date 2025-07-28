@@ -119,6 +119,12 @@
       "status": "VALID",
       "expiry_date": "2029-07-24 16:12:00",
       "user_info": "LEMON VAI PC"
+    },
+    {
+      "activated_device_uuid": "03AA02FC-0414-0569-4306-1D0700080009",
+      "status": "VALID",
+      "expiry_date": "2025-08-28 21:17:00",
+      "user_info": "@seokingit"
     }
   ]
 }
