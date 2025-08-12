@@ -71,6 +71,12 @@
       "status": "VALID",
       "expiry_date": "2026-07-16 23:43:00",
       "user_info": "Rdppp"
+    },
+    {
+      "activated_device_uuid": "581E598C-C8C4-F115-A1BF-047C16DDAF1F",
+      "status": "VALID",
+      "expiry_date": "2064-08-12 17:29:00",
+      "user_info": "Ahad Ahammed"
     }
   ]
 }
