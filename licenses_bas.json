@@ -83,6 +83,12 @@
       "status": "VALID",
       "expiry_date": "2060-08-12 17:34:00",
       "user_info": "Ahad Ahmed Sagor"
+    },
+    {
+      "activated_device_uuid": "4C4C4544-0051-3010-8051-B9C04F345032",
+      "status": "VALID",
+      "expiry_date": "2033-08-17 00:29:00",
+      "user_info": "Mehdi forean clint"
     }
   ]
 }
