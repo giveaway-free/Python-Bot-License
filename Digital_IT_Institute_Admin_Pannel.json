@@ -119,6 +119,12 @@
       "status": "VALID",
       "expiry_date": "2026-08-31 19:42:00",
       "user_info": "Ruhul AMIN student"
+    },
+    {
+      "activated_device_uuid": "3D96883C-55F9-53F2-B9D6-445772DDA2D1",
+      "status": "VALID",
+      "expiry_date": "2035-08-19 22:47:00",
+      "user_info": "ruhulchowdhury4"
     }
   ]
 }
