@@ -125,6 +125,12 @@
       "status": "VALID",
       "expiry_date": "2033-06-23 01:21:00",
       "user_info": "@Digital_it_Institute"
+    },
+    {
+      "activated_device_uuid": "031B021C-040D-05E9-5F06-350700080009",
+      "status": "VALID",
+      "expiry_date": "2029-03-30 13:24:00",
+      "user_info": "Nazmul vai"
     }
   ]
 }
