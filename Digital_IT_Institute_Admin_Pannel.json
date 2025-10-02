@@ -137,6 +137,12 @@
       "status": "VALID",
       "expiry_date": "2025-12-01 22:15:00",
       "user_info": "@Mehedi9292  Giveway"
+    },
+    {
+      "activated_device_uuid": "34C24791-6362-3114-A2E1-A0AD9F13E4A1",
+      "status": "VALID",
+      "expiry_date": "2025-12-02 14:33:00",
+      "user_info": "@Razoawn giveway"
     }
   ]
 }
