@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Browser Language</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: #f8fafc;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .lang-box {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 40px 60px;
+    border-radius: 16px;
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .lang {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #38bdf8;
+    letter-spacing: 2px;
+    text-transform: none;
+  }
+</style>
+</head>
+<body>
+  <div class="lang-box">
+    <div class="lang" id="langCode">--</div>
+  </div>
+
+  <script>
+    // Get current browser language, e.g., "en-US"
+    const lang = navigator.language || navigator.userLanguage || "unknown";
+    document.getElementById("langCode").textContent = lang;
+  </script>
+</body>
+</html>
