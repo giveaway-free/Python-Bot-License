@@ -167,6 +167,12 @@
       "status": "VALID",
       "expiry_date": "2025-12-15 20:34:00",
       "user_info": "@Ahmedmurad8992"
+    },
+    {
+      "activated_device_uuid": "7CC8D7D0-F694-11E6-B6E4-1D1CE402C06A",
+      "status": "VALID",
+      "expiry_date": "2025-12-15 20:35:00",
+      "user_info": "Omar Bin Mostofa 33bth"
     }
   ]
 }
