@@ -179,6 +179,12 @@
       "status": "VALID",
       "expiry_date": "2025-12-15 20:36:00",
       "user_info": "@soktidas123"
+    },
+    {
+      "activated_device_uuid": "03000200-0400-0500-0006-000700080009",
+      "status": "VALID",
+      "expiry_date": "2025-12-15 20:37:00",
+      "user_info": "@motiar1777"
     }
   ]
 }
