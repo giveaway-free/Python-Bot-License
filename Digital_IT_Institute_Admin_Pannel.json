@@ -143,6 +143,12 @@
       "status": "VALID",
       "expiry_date": "2025-12-02 14:33:00",
       "user_info": "@Razoawn giveway"
+    },
+    {
+      "activated_device_uuid": "23B0EBA7-D38D-035F-1A67-8B2960626F36",
+      "status": "VALID",
+      "expiry_date": "2025-12-15 19:48:00",
+      "user_info": "arsaif25( 33 batch)"
     }
   ]
 }
