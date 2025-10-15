@@ -155,6 +155,12 @@
       "status": "VALID",
       "expiry_date": "2025-12-15 19:48:00",
       "user_info": "@niamotullahkhan (33bth)"
+    },
+    {
+      "activated_device_uuid": "03AA02FC-0414-0549-CA06-EE0700080009",
+      "status": "VALID",
+      "expiry_date": "2025-12-15 20:33:00",
+      "user_info": "@rbnprince 33bth"
     }
   ]
 }
