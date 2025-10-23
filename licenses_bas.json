@@ -107,6 +107,12 @@
       "status": "VALID",
       "expiry_date": "2026-01-17 12:44:00",
       "user_info": "The Seller"
+    },
+    {
+      "activated_device_uuid": "03FF0210-04E0-05AF-A006-2D0700080009",
+      "status": "VALID",
+      "expiry_date": "2040-11-16 01:56:00",
+      "user_info": "Khairul Islam"
     }
   ]
 }
