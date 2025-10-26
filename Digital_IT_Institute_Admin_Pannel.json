@@ -209,6 +209,12 @@
       "status": "VALID",
       "expiry_date": "2025-12-26 22:08:00",
       "user_info": "Ayesha Nanjiba 33 bth"
+    },
+    {
+      "activated_device_uuid": "03D502E0-045E-055C-3B06-8D0700080009",
+      "status": "VALID",
+      "expiry_date": "2025-12-26 22:09:00",
+      "user_info": "Ahamed 33 batch"
     }
   ]
 }
