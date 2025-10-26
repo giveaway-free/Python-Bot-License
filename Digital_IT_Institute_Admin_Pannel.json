@@ -1,12 +1,6 @@
 {
   "licenses": [
     {
-      "activated_device_uuid": "035E02D8-04D3-05AE-3106-200700080009",
-      "status": "VALID",
-      "expiry_date": "2029-07-25 22:53:00",
-      "user_info": "Midul"
-    },
-    {
       "activated_device_uuid": "78BC8638-C784-1517-A910-345A600EBD97",
       "status": "VALID",
       "expiry_date": "2030-01-29 00:28:00",
