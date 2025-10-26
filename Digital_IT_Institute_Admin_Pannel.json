@@ -221,6 +221,12 @@
       "status": "VALID",
       "expiry_date": "2025-12-26 22:19:00",
       "user_info": "Muhammad Mulham 33 batch"
+    },
+    {
+      "activated_device_uuid": "31C6D5D2-A4BF-B240-8486-D66D37BE376B",
+      "status": "VALID",
+      "expiry_date": "2025-12-26 23:44:00",
+      "user_info": "Tanvir shahriar"
     }
   ]
 }
