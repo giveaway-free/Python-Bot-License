@@ -203,6 +203,12 @@
       "status": "VALID",
       "expiry_date": "2026-05-26 20:42:00",
       "user_info": "Khalid Hassan Bappy"
+    },
+    {
+      "activated_device_uuid": "36902000-18FE-12C1-4472-5E690BC32FA5",
+      "status": "VALID",
+      "expiry_date": "2025-12-26 22:08:00",
+      "user_info": "Ayesha Nanjiba 33 bth"
     }
   ]
 }
