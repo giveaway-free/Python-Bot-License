@@ -227,6 +227,12 @@
       "status": "VALID",
       "expiry_date": "2025-12-26 23:44:00",
       "user_info": "Tanvir shahriar"
+    },
+    {
+      "activated_device_uuid": "03560274-043C-0586-3206-B80700080009",
+      "status": "VALID",
+      "expiry_date": "2037-01-28 02:48:00",
+      "user_info": "ADMIN PC"
     }
   ]
 }
