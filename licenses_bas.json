@@ -113,6 +113,12 @@
       "status": "VALID",
       "expiry_date": "2040-11-16 01:56:00",
       "user_info": "Khairul Islam"
+    },
+    {
+      "activated_device_uuid": "17F217A0-D760-53CC-A3DC-E64C3ACDC374",
+      "status": "VALID",
+      "expiry_date": "2026-10-28 23:58:00",
+      "user_info": "5555"
     }
   ]
 }
