@@ -1,10 +1,118 @@
 {
   "licenses": [
     {
-      "activated_device_uuid": "74160d97-e002-5cbd-6abf-3738ca4babd6",
-      "expiry_date": "2025-12-31T00:00:00",
+      "activated_device_uuid": "73d7b5355c5fff95e1303596e2c6f9f24cce57aeeac07b1382203a81ea0a8b09",
       "status": "VALID",
-      "user_info": "Your Name"
+      "expiry_date": "2099-12-31 23:59:59",
+      "user_info": "🕵️ Tuser Ahammed (Owner)"
+},
+    {
+      "activated_device_uuid": "03000200-0400-0500-0006-000700080009",
+      "status": "VALID",
+      "expiry_date": "2022-06-15 12:00:00",
+      "user_info": "Bondhu Metalic, "
+    },
+    {
+      "activated_device_uuid": "2D006B9C-F252-0000-0000-000000000000",
+      "status": "VALID",
+      "expiry_date": "2029-06-15 12:00:00",
+      "user_info": "Asaduzzaman Reza"
+    },
+    {
+      "activated_device_uuid": "035E02D8-04D3-059E-1E06-B00700080009",
+      "status": "VALID",
+      "expiry_date": "2029-06-15 12:00:00",
+      "user_info": "Mazidul Islam, mazidulmanik11@gmail.com"
+    },
+    {
+      "activated_device_uuid": "D1B3131B-EFA7-11E5-8C0F-64CD120340C8",
+      "status": "VALID",
+      "expiry_date": "2022-06-15 12:00:00",
+      "user_info": "Faisal"
+    },
+    {
+      "activated_device_uuid": "E4A03CF3-3A38-EB11-8108-6C02E01108F1",
+      "status": "VALID",
+      "expiry_date": "2029-06-15 12:00:00",
+      "user_info": "Chiemeka"
+    },
+    {
+      "activated_device_uuid": "038D0240-045C-059D-D806-100700080009",
+      "status": "VALID",
+      "expiry_date": "2029-12-31 23:59:59",
+      "user_info": "mazidulmanik11@gmail.com"
+    },
+    {
+      "activated_device_uuid": "769A2DDC-D2D6-843B-155A-D1CC0461FE17",
+      "status": "VALID",
+      "expiry_date": "2029-06-15 12:00:00",
+      "user_info": "mazidulmanik11@gmail.com"
+    },
+    {
+      "activated_device_uuid": "03FF0210-04E0-0569-A706-600700080009",
+      "status": "VALID",
+      "expiry_date": "2032-02-18 22:45:00",
+      "user_info": "Shimul"
+    },
+    {
+      "activated_device_uuid": "371F40B8-A2D4-3249-82BE-588BC48525AA",
+      "status": "VALID",
+      "expiry_date": "2060-07-03 12:33:00",
+      "user_info": "MD RASHEDUL ISLAM"
+    },
+    {
+      "activated_device_uuid": "12E7835B-C105-1748-2BF7-1C872C5F5526",
+      "status": "VALID",
+      "expiry_date": "2027-07-11 00:18:00",
+      "user_info": "Haxus owner"
+    },
+    {
+      "activated_device_uuid": "7F4A6A41-FF6B-4B91-8B3A-041A3A67C793",
+      "status": "VALID",
+      "expiry_date": "2026-07-16 23:43:00",
+      "user_info": "Rdppp"
+    },
+    {
+      "activated_device_uuid": "581E598C-C8C4-F115-A1BF-047C16DDAF1F",
+      "status": "VALID",
+      "expiry_date": "2064-08-12 17:29:00",
+      "user_info": "Ahad Ahammed"
+    },
+    {
+      "activated_device_uuid": "581E598C-C8C4-F115-A1BF-047C16DDAF1F",
+      "status": "VALID",
+      "expiry_date": "2060-08-12 17:34:00",
+      "user_info": "Ahad Ahmed Sagor"
+    },
+    {
+      "activated_device_uuid": "4C4C4544-0051-3010-8051-B9C04F345032",
+      "status": "VALID",
+      "expiry_date": "2033-08-17 00:29:00",
+      "user_info": "Mehdi forean clint"
+    },
+    {
+      "activated_device_uuid": "031B021C-040D-05CF-FD06-A60700080009",
+      "status": "VALID",
+      "expiry_date": "2072-08-28 14:24:00",
+      "user_info": "Muzahid Islam"
+    },
+    {
+      "activated_device_uuid": "34384831-3332-3031-304E-4E3033323831",
+      "status": "VALID",
+      "expiry_date": "2060-09-23 22:23:00",
+      "user_info": "Md Shawon Islam"
+    },
+    {
+      "activated_device_uuid": "03560274-043C-05C4-7006-110700080009",
+      "status": "VALID",
+      "expiry_date": "2026-01-17 12:44:00",
+      "user_info": "The Seller"
+    },
+    {
+      "activated_device_uuid": "03FF0210-04E0-05AF-A006-2D0700080009",
+      "status": "VALID",
+      "expiry_date": "2040-11-16 01:56:00",
+      "user_info": "Khairul Islam"
     }
   ]
 }
