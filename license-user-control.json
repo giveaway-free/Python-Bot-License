@@ -1,12 +1,12 @@
 {
     "LICENSE_URLS": [
         {
-            "UUID_LIMIT": 22000000,
+            "UUID_LIMIT": 1,
             "url": "https://raw.githubusercontent.com/giveaway-free/Python-Bot-License/refs/heads/main/licenses_bas.json",
             "expiry_date": "2029-11-29 09:24:59"
         },
         {
-            "UUID_LIMIT": 1000,
+            "UUID_LIMIT": 1,
             "url": "https://raw.githubusercontent.com/giveaway-free/Python-Bot-License/refs/heads/main/RDP%20License.json",
             "expiry_date": "2029-11-29 02:58:59"
         },
