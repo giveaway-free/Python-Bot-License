@@ -113,6 +113,12 @@
       "status": "VALID",
       "expiry_date": "2029-07-05 11:14:00",
       "user_info": "Asaduzzaman Reza"
+    },
+    {
+      "activated_device_uuid": "6ab44345a4f3dc4cedc9348e6fe0b292ed2103a53dc7063f82b2f44475ce11f1",
+      "status": "VALID",
+      "expiry_date": "2028-06-05 12:34:00",
+      "user_info": "Tuser"
     }
   ]
 }
