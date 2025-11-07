@@ -119,6 +119,12 @@
       "status": "VALID",
       "expiry_date": "2028-06-05 12:34:00",
       "user_info": "Tuser"
+    },
+    {
+      "activated_device_uuid": "17F217A0-D760-53CC-A3DC-E64C3ACDC374",
+      "status": "VALID",
+      "expiry_date": "2025-11-28 13:04:00",
+      "user_info": "TTT"
     }
   ]
 }
