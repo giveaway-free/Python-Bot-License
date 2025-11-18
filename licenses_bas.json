@@ -119,6 +119,12 @@
       "status": "VALID",
       "expiry_date": "2025-11-28 13:04:00",
       "user_info": "TTT"
+    },
+    {
+      "activated_device_uuid": "6ab44345a4f3dc4cedc9348e6fe0b292ed2103a53dc7063f82b2f44475ce11f1",
+      "status": "VALID",
+      "expiry_date": "2029-11-19 14:19:00",
+      "user_info": "Tuser"
     }
   ]
 }
