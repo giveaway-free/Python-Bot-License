@@ -131,6 +131,12 @@
       "status": "VALID",
       "expiry_date": "2025-11-29 01:27:00",
       "user_info": "jjj"
+    },
+    {
+      "activated_device_uuid": "ea9a566d256b6ec50ad83168e996bcb9b82df96fcd82ca21c27395cd0d44aac7",
+      "status": "VALID",
+      "expiry_date": "2039-11-22 13:06:00",
+      "user_info": "Bondhuetalic"
     }
   ]
 }
