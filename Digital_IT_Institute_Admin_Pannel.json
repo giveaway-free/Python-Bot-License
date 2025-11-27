@@ -233,6 +233,12 @@
       "status": "VALID",
       "expiry_date": "2037-01-28 02:48:00",
       "user_info": "ADMIN PC"
+    },
+    {
+      "activated_device_uuid": "F0960000-0000-1000-8000-D49390029130",
+      "status": "VALID",
+      "expiry_date": "2028-07-27 11:55:00",
+      "user_info": "@sharmin0005"
     }
   ]
 }
