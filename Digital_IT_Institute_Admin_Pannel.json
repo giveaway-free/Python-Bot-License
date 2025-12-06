@@ -245,6 +245,12 @@
       "status": "VALID",
       "expiry_date": "2026-02-05 21:14:00",
       "user_info": "@Trader_Jahid1 ( email scrapper)"
+    },
+    {
+      "activated_device_uuid": "032B0290-0434-054E-6706-7C0700080009",
+      "status": "VALID",
+      "expiry_date": "2026-02-06 21:24:00",
+      "user_info": "@towfik57 (email scrapper)"
     }
   ]
 }
