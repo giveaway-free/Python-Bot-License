@@ -137,6 +137,12 @@
       "status": "VALID",
       "expiry_date": "2039-11-22 13:06:00",
       "user_info": "Bondhuetalic"
+    },
+    {
+      "activated_device_uuid": "31C6D5D2-A4BF-B240-8486-D66D37BE376B",
+      "status": "VALID",
+      "expiry_date": "2030-07-11 09:55:00",
+      "user_info": "Tanvir Shahriar"
     }
   ]
 }
