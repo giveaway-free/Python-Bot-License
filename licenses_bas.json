@@ -143,6 +143,12 @@
       "status": "VALID",
       "expiry_date": "2030-07-11 09:55:00",
       "user_info": "Tanvir Shahriar"
+    },
+    {
+      "activated_device_uuid": "22223501d2bbb8158f50b29925a253defad9e5bfb6f8ca5c05735d1f7b418bab",
+      "status": "VALID",
+      "expiry_date": "2040-06-08 14:31:00",
+      "user_info": "Mohammad, FB otp sender bot"
     }
   ]
 }
