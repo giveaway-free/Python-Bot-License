@@ -155,6 +155,12 @@
       "status": "VALID",
       "expiry_date": "2030-01-31 22:50:00",
       "user_info": "Tuser Auto Click BAs"
+    },
+    {
+      "activated_device_uuid": "ibw8goRHnRAJ3ydhPV60SIPEhVyk3R2oII7QCVXCgDc=",
+      "status": "VALID",
+      "expiry_date": "2051-05-20 12:40:00",
+      "user_info": "Tanvir Shahriar"
     }
   ]
 }
