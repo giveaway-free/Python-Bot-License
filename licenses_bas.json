@@ -161,6 +161,12 @@
       "status": "VALID",
       "expiry_date": "2100-06-09 01:07:00",
       "user_info": "Rakib Hasan, Copyright Pro 20$ Clint"
+    },
+    {
+      "activated_device_uuid": "amgF2Djz25+yyPUk522U2yuu5dAwmfLQKxGwuFGcSCQ=",
+      "status": "VALID",
+      "expiry_date": "2080-11-06 11:40:00",
+      "user_info": "Md Limon Hosain"
     }
   ]
 }
