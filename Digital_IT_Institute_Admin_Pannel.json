@@ -257,6 +257,12 @@
       "status": "VALID",
       "expiry_date": "2026-01-14 22:28:00",
       "user_info": "@UnknownX918"
+    },
+    {
+      "activated_device_uuid": "0A5733D7-2E7D-EC11-A8A5-C01803D40281",
+      "status": "VALID",
+      "expiry_date": "2026-02-26 21:46:00",
+      "user_info": "@EpicKamrul (email)"
     }
   ]
 }
