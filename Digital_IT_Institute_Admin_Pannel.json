@@ -293,6 +293,12 @@
       "status": "VALID",
       "expiry_date": "2026-03-17 21:09:00",
       "user_info": "@maruf25388 Email scrapper"
+    },
+    {
+      "activated_device_uuid": "5B1E6F9B-C8D6-DB02-B25D-59DB11106517",
+      "status": "VALID",
+      "expiry_date": "2026-03-17 21:11:00",
+      "user_info": "@prohorraja"
     }
   ]
 }
