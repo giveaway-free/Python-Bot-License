@@ -347,6 +347,12 @@
       "status": "VALID",
       "expiry_date": "2026-05-19 19:48:00",
       "user_info": "@asadurrohman5"
+    },
+    {
+      "activated_device_uuid": "5A449DFF-CB1B-11E5-AD85-1E90BF0CF0FF",
+      "status": "VALID",
+      "expiry_date": "2026-03-19 19:53:00",
+      "user_info": "@Bhuya86"
     }
   ]
 }
