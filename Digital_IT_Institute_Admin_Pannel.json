@@ -383,6 +383,12 @@
       "status": "VALID",
       "expiry_date": "2026-04-25 21:56:00",
       "user_info": "@nahid913e"
+    },
+    {
+      "activated_device_uuid": "4790AB67-EF2E-9158-356E-E3F7C3BBB50F",
+      "status": "VALID",
+      "expiry_date": "2026-05-26 22:43:00",
+      "user_info": "@redoykhant"
     }
   ]
 }
