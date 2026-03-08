@@ -179,12 +179,6 @@
       "status": "VALID",
       "expiry_date": "2026-03-05 23:10:00",
       "user_info": "Shihab"
-    },
-    {
-      "activated_device_uuid": "4b33544889a92f4d22d36003684c5491012cb609905568732a61657eaa1ae881",
-      "status": "VALID",
-      "expiry_date": "2026-03-05 23:22:00",
-      "user_info": "Sabira"
     }
   ]
 }
