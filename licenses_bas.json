@@ -185,12 +185,6 @@
       "status": "VALID",
       "expiry_date": "2026-03-05 23:22:00",
       "user_info": "Sabira"
-    },
-    {
-      "activated_device_uuid": "2dfe691fca548d55105236e5b9b4d7a7e041e187d40a92db29a2194aa005f0a9",
-      "status": "VALID",
-      "expiry_date": "2026-03-05 23:22:00",
-      "user_info": "Sagor"
     }
   ]
 }
