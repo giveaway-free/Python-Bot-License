@@ -173,6 +173,12 @@
       "status": "VALID",
       "expiry_date": "2100-01-12 14:16:00",
       "user_info": "Umer"
+    },
+    {
+      "activated_device_uuid": "DESKTOP-ONO4V1O",
+      "status": "VALID",
+      "expiry_date": "2085-07-13 03:00:00",
+      "user_info": "SAYED"
     }
   ]
 }
