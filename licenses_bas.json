@@ -191,6 +191,12 @@
       "status": "VALID",
       "expiry_date": "2060-07-23 14:03:00",
       "user_info": "SAYED"
+    },
+    {
+      "activated_device_uuid": "dUZBDH7m4UiV0z1/bxGvpSzRK1lfTh65x1SAg+Sn6xg=",
+      "status": "VALID",
+      "expiry_date": "2055-01-07 13:57:00",
+      "user_info": "Digita"
     }
   ]
 }
