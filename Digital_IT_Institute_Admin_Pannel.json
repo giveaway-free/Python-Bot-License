@@ -401,6 +401,12 @@
       "status": "VALID",
       "expiry_date": "2029-12-11 23:56:00",
       "user_info": "admin pc"
+    },
+    {
+      "activated_device_uuid": "f588a50e-8216-4be7-8369-955a75d20a11|BFEBFBFF000506E3|03560274-043C-0586-3206-B80700080009",
+      "status": "VALID",
+      "expiry_date": "2030-07-05 01:13:00",
+      "user_info": "MY"
     }
   ]
 }
