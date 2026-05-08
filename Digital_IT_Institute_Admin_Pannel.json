@@ -413,6 +413,12 @@
       "status": "VALID",
       "expiry_date": "2028-12-08 22:34:00",
       "user_info": "Laptop HP"
+    },
+    {
+      "activated_device_uuid": "1Mn33YBBHiguijbhtn4c7sWL8dArA7QkmDrCJXB/xiY",
+      "status": "VALID",
+      "expiry_date": "2027-12-08 22:36:00",
+      "user_info": "Laptop"
     }
   ]
 }
