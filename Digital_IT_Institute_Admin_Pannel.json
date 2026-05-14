@@ -455,6 +455,12 @@
       "status": "VALID",
       "expiry_date": "2026-08-14 22:01:00",
       "user_info": "@blinkseo autoclicker"
+    },
+    {
+      "activated_device_uuid": "e3f862a3-e72d-407e-b791-8f3d0d6797a8|07E5711_OB1B655313|178BFBFF00A60F12|67890C9E-E68A-181B-AA5F-345A604B29B",
+      "status": "VALID",
+      "expiry_date": "2026-08-14 22:02:00",
+      "user_info": "@blinkseo"
     }
   ]
 }
