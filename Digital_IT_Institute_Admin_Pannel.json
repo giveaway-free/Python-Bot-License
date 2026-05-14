@@ -443,6 +443,12 @@
       "status": "VALID",
       "expiry_date": "2026-08-14 21:59:00",
       "user_info": "@Debdas32"
+    },
+    {
+      "activated_device_uuid": "5CG8527CSV|45f8a30a-4079-4fe8-abc5-10bff4ece13f|PGWHQ00WBBQM68|BFEBFBFF000806EA|34D01EB8-D7BC-6F85-153D-B7B32E86CB59",
+      "status": "VALID",
+      "expiry_date": "2026-08-14 22:00:00",
+      "user_info": "@mdlimonhosain61 autoclicker"
     }
   ]
 }
