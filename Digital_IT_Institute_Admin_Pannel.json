@@ -461,6 +461,12 @@
       "status": "VALID",
       "expiry_date": "2026-08-14 22:02:00",
       "user_info": "@blinkseo"
+    },
+    {
+      "activated_device_uuid": "PF0SXSE1|a307dcc6-9ccd-48cb-9cea-9efe0936c5b3|PF0SXSE1|178BFBFF00730F01|BFAC3559-35EC-11E7-8FF5-54E1AD1D0843",
+      "status": "VALID",
+      "expiry_date": "2026-08-14 22:02:00",
+      "user_info": "@morsalin12112"
     }
   ]
 }
