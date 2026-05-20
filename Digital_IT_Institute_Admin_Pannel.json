@@ -473,6 +473,12 @@
       "status": "VALID",
       "expiry_date": "2026-08-14 22:03:00",
       "user_info": "@Rana_Network_Official"
+    },
+    {
+      "activated_device_uuid": "ece015bb-e4b7-402f-93af-52025231c6c0|178BFBFF00A70F80|03FF0210-04E0-052F-AD06-AF0700080009",
+      "status": "VALID",
+      "expiry_date": "2026-09-20 21:20:00",
+      "user_info": "@Rana84_DM"
     }
   ]
 }
