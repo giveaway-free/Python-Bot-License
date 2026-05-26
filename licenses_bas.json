@@ -197,6 +197,12 @@
       "status": "VALID",
       "expiry_date": "2055-01-07 13:57:00",
       "user_info": "Digita"
+    },
+    {
+      "activated_device_uuid": "1ajCna8VmPfObzAWUYSJeSZIWCOT5fxRXl6MlBkRQZE=",
+      "status": "VALID",
+      "expiry_date": "2040-06-08 14:29:00",
+      "user_info": "Ahad Ahmed Ontor"
     }
   ]
 }
