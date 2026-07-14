@@ -1,10 +1,10 @@
 {
   "licenses": [
     {
-      "activated_device_uuid": "6ppWbSVrbsUK2DFo6Za8uQ",
-      "user_info": "Bondhu Metalic",
+      "activated_device_uuid": "DkQf1LpJby6wEQDuF+qwcQlJwj8vY+zA4MoD0bJ/iIA=",
+      "status": "VALID",
       "expiry_date": "2099-10-26 23:00:00",
-      "status": "VALID"
+      "user_info": "Bondhu Metalic"
     },
     {
       "activated_device_uuid": "035E02D8-04D3-059E-1E06-B00700080009",
