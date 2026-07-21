@@ -497,6 +497,12 @@
       "status": "VALID",
       "expiry_date": "2026-12-22 01:12:00",
       "user_info": "RYZEN PC"
+    },
+    {
+      "activated_device_uuid": "77E82CD0-F2D8-1935-852A-581122B02895",
+      "status": "VALID",
+      "expiry_date": "2026-12-22 01:15:00",
+      "user_info": "RYZEN"
     }
   ]
 }
