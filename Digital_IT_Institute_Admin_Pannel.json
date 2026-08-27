@@ -509,6 +509,12 @@
       "status": "VALID",
       "expiry_date": "2027-12-27 22:33:00",
       "user_info": "old pc"
+    },
+    {
+      "activated_device_uuid": "03560274-043C-0586-3206-B80700080009",
+      "status": "VALID",
+      "expiry_date": "2028-12-27 22:35:00",
+      "user_info": "old pc"
     }
   ]
 }
