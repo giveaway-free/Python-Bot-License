@@ -515,6 +515,12 @@
       "status": "VALID",
       "expiry_date": "2028-12-27 22:35:00",
       "user_info": "old pc"
+    },
+    {
+      "activated_device_uuid": "hny+p8Z3V/c6ETDjnVkr2Aapf4LCqpg8+WFjPSGpRv4=",
+      "status": "VALID",
+      "expiry_date": "2030-12-28 01:29:00",
+      "user_info": "old"
     }
   ]
 }
