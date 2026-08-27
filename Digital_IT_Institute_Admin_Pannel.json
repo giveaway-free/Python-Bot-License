@@ -497,6 +497,12 @@
       "status": "VALID",
       "expiry_date": "2027-12-28 01:36:00",
       "user_info": "sfsdfefefe"
+    },
+    {
+      "activated_device_uuid": "mDAhz6VazAAc7YANpOu3BXNM9I4rUKE8H2xnrz0pPkw=",
+      "status": "VALID",
+      "expiry_date": "2027-12-28 01:37:00",
+      "user_info": "ryzen"
     }
   ]
 }
