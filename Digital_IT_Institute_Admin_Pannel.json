@@ -521,6 +521,12 @@
       "status": "VALID",
       "expiry_date": "2029-12-29 01:33:00",
       "user_info": "newpccc"
+    },
+    {
+      "activated_device_uuid": "77E82CD0-F2D8-1935-852A-581122B02895",
+      "status": "VALID",
+      "expiry_date": "2030-12-29 01:36:00",
+      "user_info": "new pccc"
     }
   ]
 }
