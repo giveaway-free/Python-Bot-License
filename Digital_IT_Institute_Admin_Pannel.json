@@ -563,6 +563,12 @@
       "status": "VALID",
       "expiry_date": "2030-12-29 21:56:00",
       "user_info": "roman pc"
+    },
+    {
+      "activated_device_uuid": "IqFgmxOKyFmp/zhqEL5Nr4GKurKCexntQKHx6g5zwlk=",
+      "status": "VALID",
+      "expiry_date": "2028-12-29 22:07:00",
+      "user_info": "roman pc"
     }
   ]
 }
