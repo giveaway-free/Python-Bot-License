@@ -557,6 +557,12 @@
       "status": "VALID",
       "expiry_date": "2029-12-29 16:30:00",
       "user_info": "asrffesrfasdfsdf"
+    },
+    {
+      "activated_device_uuid": "03000200-0400-0500-0006-000700080009",
+      "status": "VALID",
+      "expiry_date": "2030-12-29 21:56:00",
+      "user_info": "roman pc"
     }
   ]
 }
